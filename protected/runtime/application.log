@@ -10608,3 +10608,1722 @@ Stack trace:
 REQUEST_URI=/iyara/assets/88505594/bootstrap/css/bootstrap.min.css
 HTTP_REFERER=http://localhost/iyara/site/index
 ---
+2019/11/18 14:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/font-awesome.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/font-awesom...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/font-awesome.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/barfiller.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/barfiller.c...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/barfiller.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/magnific-popup.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/magnific-po...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/magnific-popup.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/owl.carousel.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/owl.carouse...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/owl.carousel.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/style.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/slicknav.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/slicknav.mi...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/slicknav.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/magnific-popup.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/magnific-po...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/magnific-popup.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/owl.carousel.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/owl.carouse...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/owl.carousel.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/barfiller.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/barfiller.c...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/barfiller.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/slicknav.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/slicknav.mi...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/slicknav.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/font-awesome.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/font-awesom...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/font-awesome.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/style.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/magnific-popup.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/magnific-po...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/magnific-popup.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/barfiller.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/barfiller.c...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/barfiller.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/font-awesome.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/font-awesom...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/font-awesome.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/slicknav.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/slicknav.mi...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/slicknav.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/owl.carousel.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/owl.carouse...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/owl.carousel.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/style.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/video/SpotIYARA.mp4".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/video/S...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/video/SpotIYARA.mp4
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/brand/id/1
+---
+2019/11/18 14:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/index/category/2
+---
+2019/11/18 14:09:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/index/category/2
+---
+2019/11/18 14:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/index/category/3
+---
+2019/11/18 14:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/views/id/7
+---
+2019/11/18 14:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/video/SpotIYARA.mp4".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/video/S...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/video/SpotIYARA.mp4
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/owl.carousel.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/owl.carouse...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/owl.carousel.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/slicknav.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/slicknav.mi...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/slicknav.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/magnific-popup.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/magnific-po...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/magnific-popup.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/barfiller.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/barfiller.c...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/barfiller.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/font-awesome.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/font-awesom...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/font-awesome.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/css/style.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/18 14:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:13:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/video/SpotIYARA.mp4".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/video/S...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/video/SpotIYARA.mp4
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:14:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:14:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/video/SpotIYARA.mp4".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/video/S...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/video/SpotIYARA.mp4
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 14:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/index
+---
+2019/11/18 14:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:17:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:20:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:40:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:43:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:45:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:48:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:49:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:50:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 14:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:35:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:37:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:38:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:40:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:46:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:48:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:52:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:54:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:56:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:58:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 15:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:05:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 16:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:12:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:14:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:15:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:15:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:18:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:19:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:21:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:26:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:31:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:32:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:33:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/18 16:34:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 16:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 16:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/18 16:35:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e90f4035/bootstrap/css/bootstrap.min.css".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e90f4035...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/e90f4035/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
