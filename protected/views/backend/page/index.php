@@ -3,7 +3,6 @@
         background: #FFFFFF;
     }
 
-
     .box-center{
         width: 100%;margin-left: auto;margin-right: auto;position: absolute;top: 50%;transform: translateY(-50%);
         word-wrap: break-word;
@@ -18,125 +17,58 @@
         text-align: center;
     }
 
-@media (min-width:992px){
     .vertical-center {
-          height: 100%;
-          position: relative;
-          overflow:hidden;
-          padding: 10px;
-          text-align: center;
-        }
+        height: 100%;
+        position: relative;
+        overflow:hidden;
+        padding: 10px;
+        text-align: center;
+    }
 
     .vertical-center div {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      word-wrap: break-word;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
 
     }
 
-    .vertical-center-none-img {
-          height: 100%;
-          position: relative;
-          overflow:hidden;
-          padding: 10px;
-          text-align: center;
-          clear: both;
+    @media (min-width:992px){
+        .vertical-center-none-img {
+            height: 100%;
+            position: relative;
+            overflow:hidden;
+            padding: 10px;
+            text-align: center;
         }
 
-    .vertical-center-none-img div {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      word-wrap: break-word;
-
-    }
-}
-
-@media (max-width:992px){
-    .vertical-center-none-img {
-          height: auto;
-          position: relative;
-          overflow:hidden;
-          padding: 10px;
-          text-align: center;
-          clear: both;
+        .vertical-center-none-img div {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            word-wrap: break-word;
         }
 
-    .vertical-center-none-img div {
-      margin: 0;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      word-wrap: break-word;
-
-    }
-}
-
-@media (max-width:768px){
-    .vertical-center-none-img {
-          height: auto;
-          position: relative;
-          overflow:hidden;
-          padding: 10px;
-          text-align: center;
-          clear: both;
+        .v-none-img{
+            position: absolute; width: 100%; height: 100%;
         }
-
-    .vertical-center-none-img div {
-      margin: 0;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      word-wrap: break-word;
-
     }
-}
-
-@media (max-width:486px){
-    .vertical-center-none-img {
-          height: auto;
-          position: relative;
-          overflow:hidden;
-          padding: 10px;
-          text-align: center;
-          clear: both;
-        }
-
-    .vertical-center-none-img div {
-      margin: 0;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      word-wrap: break-word;
-
-    }
-}
 
 
 
     ul{
         list-style-type: none;
     }
-
-
-
 </style>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.js"></script>
-<?php $Config = new Configweb_model();?>
+<?php $Config = new Configweb_model(); ?>
 <script type="text/javascript">
     $(document).ready(function() {
         //load_data();
@@ -146,7 +78,7 @@
             buttonText: "Select Image",
             //'buttonImage': '<?//= Yii::app()->baseUrl ?>/images/image-up-icon.png',
 
-            'uploadScript': "<?=Yii::app()->createUrl('backend/page/uploadify')?>",
+            'uploadScript': "<?= Yii::app()->createUrl('backend/page/uploadify') ?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             //'width': '128',
             //'height': '132',
@@ -169,91 +101,90 @@
 </script>
 <?php
 $this->breadcrumbs = array(
-	'Page',
+    'Page',
 );
 ?>
 <h4>Manage webpage</h4>
 <div style="padding: 10px;">
-    <?php $modelPage = new Page();?>
+    <?php $modelPage = new Page(); ?>
     <?php
-$r = 0;
-foreach ($layout as $rs):
-	$r++;
-	?>
-																																	    <style type="text/css">
-																						                                                    @media (min-width:992px){
-																																	         .row.display-flex<?php echo $r ?> {
-																																	  display: flex;
-																																	  flex-wrap: wrap;
-																																	}
-																																	.row.display-flex<?php echo $r ?> > [class*='col-'] {
-																																	  display: flex;
-																																	  flex-direction: column;
-																																	}
-																						                                        }
-
-
-
-																																	    </style>
-																																																																									        <div class="row" style="margin-top:0px; clear: both;">
-																																																																									            <div class="col-md-12 col-lg-12" style="padding-left:0px;">
-																																																																									                <button type="button" class="btn btn-warning " style="z-index: 5;" onclick="deleteRow('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')">
-																																																																									                    <i class="fa fa-trash"></i> Delete Row <?php echo $r ?>
-																																																																									                </button>
-																																																																									            </div>
-																																                                                                                                                                                                            </div>
-																																                                                                                                                                                                            <div class="row display-flex<?php echo $r ?>">
-																																																																									            <?php
-	for ($i = 1; $i <= ($rs['columns']); $i++):
-		$contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
-		?>
-																																																																																																																																																		                <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
-																																																																																																																																																		                    <div class="btn-group pull-right" role="group" aria-label="..." style="position: absolute; top: 0px; right: 0px; z-index: 5;">
-																																																																																																																																																		                        <button type="button" class="btn btn-default" onclick="popupImages('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-image"></i> Image</button>
-																																																																																																																																																		                        <button type="button" class="btn btn-default" onclick="popupTextcontent('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-pencil"></i> Text</button>
-																																																																																																																																																		                        <button type="button" class="btn btn-default" onclick="popupLink('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-link"></i> Link</button>
-																																																																																																																																																		                    </div>
-
-
-																																																																																																																																																		                    <!--
-																																																																																																																																																		                        #### ถ้ามีรูปภาพ ####
-																																																																																																																																																		                    -->
-																																																																																																																																																		                    <?php if ($contentLayout['images']) {?>
-																																																																																																																																																		                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-																																																																																																																																																		                            <div style="position: absolute; width: 100%; height: 100%;">
-																																																																																																																																																		                                <div class="vertical-center">
-																																																																																																																																																		                                    <div><?php echo $contentLayout['content'] ?>
-																																																																																																																    																		                                                                                                    <?php if ($contentLayout['link']) {?>
-																																																																																																																    																		                                                                                                        <a href="<?php echo $contentLayout['link'] ?>" class="btn btn-text" target="_bank"><?php echo $contentLayout['linktext'] ?></a>
-																																																																																																																    																		                                                                                                <?php }?>
-																																																																																																																                                                                                                                                                                            </div>
-																																																																																																																																																		                                </div>
-																																																																																																																																																		                            </div>
-																																																																																																																																																		                        <?php }?>
-																																																																																																																																																		                        <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
-																																																																																																																																																		                    <?php } else {?>
-																																																																																																																																																		                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-																																																																																																																																																		                                    <div class="vertical-center-none-img">
-																																																																																																																																																		                                        <div>
-																																																																																																				                                                                                                                                                                                                                                  <?php echo $contentLayout['content'] ?>
-																																																																																																						                                                                                                                                                                                                                            <?php if ($contentLayout['link']) {?>
-																																																																																																						                                                                                                                                                                                                                                <a href="<?php echo $contentLayout['link'] ?>" class="btn btn-text" target="_bank"><?php echo $contentLayout['linktext'] ?></a>
-																																																																																																						                                                                                                                                                                                                                            <?php }?>
-																																																																																																				                                                                                                                                                                                                                              </div>
-																																																																																																																																																		                                    </div>
-																																																																																																																																																		                        <?php } else {?>
-																																																																																																																																																		                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
-																																																																																																																																																		                                <div class="box-center" style=" border: #004b63 dashed 2px;">
-																																																																																																																																																		                                    <div style="font-family: Th;">No Data</div>
-																																																																																																																																																		                                </div>
-																																																																																																																																																		                            </div>
-																																																																																																																																																		                        <?php }?>
-																																																																																																																																																		                    <?php }?>
-																																																																																																																																																		                </div>
-																																																																																																																																																		            <?php endfor;?>
-																																																																									        </div>
-																																																																									    <?php endforeach;?>
-    <?php $rownew = ($r + 1)?>
+    $r = 0;
+    foreach ($layout as $rs):
+        $r++;
+        ?>
+        <style type="text/css">
+            @media (min-width:992px){
+                .row.display-flex<?php echo $r ?> {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .row.display-flex<?php echo $r ?> > [class*='col-'] {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        </style>
+        <div class="row" style="margin-top:0px; clear: both;">
+            <div class="col-md-12 col-lg-12" style="padding-left:0px;">
+                <button type="button" class="btn btn-warning " style="z-index: 5;" onclick="deleteRow('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')">
+                    <i class="fa fa-trash"></i> Delete Row <?php echo $r ?>
+                </button>
+            </div>
+        </div>
+        <div class="row display-flex<?php echo $r ?>">
+            <?php
+            for ($i = 1; $i <= ($rs['columns']); $i++):
+                $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
+                ?>
+                <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
+                    <div class="btn-group pull-right" role="group" aria-label="..." style="position: absolute; top: 0px; right: 0px; z-index: 5;">
+                        <button type="button" class="btn btn-default" onclick="popupImages('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-image"></i> Image</button>
+                        <button type="button" class="btn btn-default" onclick="popupTextcontent('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-pencil"></i> Text</button>
+                        <button type="button" class="btn btn-default" onclick="popupLink('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-link"></i> Link</button>
+                    </div>
+                    <!--
+                        #### ถ้ามีรูปภาพ ####
+                    -->
+                    <?php if ($contentLayout['images']) { ?>
+                        <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                            <div style="position: absolute; width: 100%; height: 100%;">
+                                <div class="vertical-center">
+                                    <div><?php echo $contentLayout['content'] ?>
+                                        <?php if ($contentLayout['link']) { ?>
+                                            <a href="<?php echo $contentLayout['link'] ?>" class="btn btn-text" target="_bank"><?php echo $contentLayout['linktext'] ?></a>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                    <?php } else { ?>
+                        <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                            <div class="v-none-img">
+                                <div class="vertical-center-none-img">
+                                    <div>
+                                        <?php echo $contentLayout['content'] ?>
+                                        <?php if ($contentLayout['link']) { ?>
+                                            <center>
+                                                <a href="<?php echo $contentLayout['link'] ?>" class="btn btn-text" target="_bank"><?php echo $contentLayout['linktext'] ?></a>
+                                            </center>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+                                <div class="box-center" style=" border: #004b63 dashed 2px;">
+                                    <div style="font-family: Th;">No Data</div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
+                </div>
+            <?php endfor; ?>
+        </div>
+    <?php endforeach; ?>
+    <?php $rownew = ($r + 1) ?>
     <div class="row" style="margin-top:20px;">
         <div class="col-md-12 col-lg-12" style="padding:0px;">
             <button class="btn btn-primary btn-block" style=" border: darkgray dashed 3px; text-align: center;  height: 100px;" onclick="popupLayout()">

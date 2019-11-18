@@ -2,97 +2,153 @@
     .hideme{
         opacity:0;
     }
-    /*
-    .box-center{
-        width: 100%;margin-left: auto;margin-right: auto;position: relative;top: 50%;transform: translateY(-50%);
+    .vertical-center {
+        height: 100%;
+        position: relative;
+        overflow:hidden;
+        padding: 10px;
         text-align: center;
-        padding: 20px;
-
-    }
-    */
-
-    .isimages{
-        position: absolute; width: 100%; height: 100%;
     }
 
-    @media(min-width:480px) {
-        .istext ul{
-            margin: 10px;
+    .vertical-center div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
+
+    }
+
+    @media (min-width:992px){
+        .vertical-center-none-img {
+            height: 100%;
+            position: relative;
+            overflow:hidden;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .vertical-center-none-img div {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            word-wrap: break-word;
+        }
+
+        .v-none-img{
+            position: absolute; width: 100%; height: 100%;
         }
     }
 
-    @media(min-width:1024px) {
-        .istext ul{
-            margin-top: 10%;
-        }
+    .btn-links:hover {
+        background-color: #212121;
     }
 
-    ul{
-        list-style-type: none;
+    .btn-links focus{
+        background-color: #212121;
     }
 
-
-.btn-links:hover {
-    background-color: #212121;
-}
-
-.btn-links focus{
-    background-color: #212121;
-}
-
-.btn-links {
-    border-radius: 20px;
-    border: none;
-    text-align:center;
-    background: none;
-    color: #ffffff;
-    font-size: 18px;
-    transition:all .2s ease-in;
-}
+    .btn-links {
+        border-radius: 18px;
+        border: none;
+        text-align:center;
+        background: none;
+        color: #ffffff;
+        font-size: 18px;
+        transition:all .2s ease-in;
+    }
 
 </style>
-<link rel="stylesheet" type="text/css" href="<?=Yii::app()->baseUrl;?>/css/headphoneguru.css" />
+<link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/css/headphoneguru.css" />
 <?php
 $web = new Configweb_model();
 $modelPage = new Page();
 ?>
 
-<?php foreach ($layout as $rs): ?>
-    <div class="row" style="margin-top:0px; margin:0px;">
+<div style="padding: 10px;">
+    <?php
+    $r = 0;
+    foreach ($layout as $rs):
+        $r++;
+        ?>
+        <style type="text/css">
+            @media (min-width:992px){
+                .row.display-flex<?php echo $r ?> {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .row.display-flex<?php echo $r ?> > [class*='col-'] {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        </style>
         <div class="hideme">
-            <?php
-for ($i = 1; $i <= ($rs['columns']); $i++):
-	$contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
-	?>
-																																								                <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
-																																								                    <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-																																								                        <div class="<?php echo ($contentLayout['images']) ? "isimages" : "istext"; ?>">
-																																								                            <div class="box-center">
-																																								                                <div class="box-text-content">
-																																								                                    <div class="istext">
-																																					                                                    <?php echo $contentLayout['content'] ?>
-																																					                                                        <?php if ($contentLayout['link']) {?>
-																																			                                                                    <div style="text-align: center;">
-																																		                                                                           <a href="<?php echo $contentLayout['link'] ?>">
-																														                                                                                            <button type="button" class="btn-links">
-															                                                                                                                                                         <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-																												</button>
-																														                                                                                            </a>
-																																		                                                                        </div>
-																																					                                                        <?php }?>
-																																					                                                    </div>
+            <div class="row display-flex<?php echo $r ?>">
 
-																																								                                </div>
-																																								                            </div>
-																																								                        </div>
-																																								                    <?php }?>
-																																								                    <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
-																																								                </div>
-																																								            <?php endfor;?>
+                <?php
+                for ($i = 1; $i <= ($rs['columns']); $i++):
+                    $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
+                    ?>
+                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
+
+                        <!--
+                            #### ถ้ามีรูปภาพ ####
+                        -->
+                        <?php if ($contentLayout['images']) { ?>
+                            <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                                <div style="position: absolute; width: 100%; height: 100%;">
+                                    <div class="vertical-center">
+                                        <div><?php echo $contentLayout['content'] ?>
+                                            <?php if ($contentLayout['link']) { ?>
+                                                <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
+                                                    <button type="button" class="btn-links">
+                                                        <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+                                                    </button>
+                                                </a>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                            <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                        <?php } else { ?>
+                            <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                                <div class="v-none-img">
+                                    <div class="vertical-center-none-img">
+                                        <div>
+                                            <?php echo $contentLayout['content'] ?>
+                                            <?php if ($contentLayout['link']) { ?>
+                                                <center>
+                                                    <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
+                                                        <button type="button" class="btn-links">
+                                                            <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+                                                        </button>
+                                                    </a>
+                                                </center>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } else { ?>
+                                <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+                                    <div class="box-center" style=" border: #004b63 dashed 2px;">
+                                        <div style="font-family: Th;">No Data</div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
-    </div>
-<?php endforeach;?>
-
+    <?php endforeach; ?>
+</div>
 <script type="text/javascript">
 
     $(document).ready(function() {

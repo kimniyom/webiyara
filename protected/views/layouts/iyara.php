@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <?php $web = new Configweb_model();?>
+        <?php $web = new Configweb_model(); ?>
         <title>IYARA,iyara,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo.png">
@@ -21,8 +21,8 @@
         <meta name="description" content="<?php echo Yii::app()->session['description']; ?>" />
         <meta name="keywords" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
 
-        <link rel="stylesheet" type="text/css" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="<?=Yii::app()->baseUrl;?>/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/css/footer.css" />
         <style>
             .menuheadphoneguru ul li a{
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -125,22 +125,22 @@
 
         </style>
         <?php
-$productModel = new Product();
-$lastProduct = $productModel->_get_last_product();
-$bestProduct = $productModel->_get_best_product();
-$saleProduct = $productModel->_get_sale_products();
+        $productModel = new Product();
+        $lastProduct = $productModel->_get_last_product();
+        $bestProduct = $productModel->_get_best_product();
+        $saleProduct = $productModel->_get_sale_products();
 
-$articleModel = new Article();
-$NewsBlog = $articleModel->Get_article_limit(3);
-$articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
+        $articleModel = new Article();
+        $NewsBlog = $articleModel->Get_article_limit(3);
+        $articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
 
-$ContactModel = new Contact();
-$Contact = $ContactModel->gat_contact();
-$logoMini = "<img src='" . Yii::app()->baseUrl . "/images/logo.png' class='img-responsive' alt='Image'>";
-$iconsloader = "<img src='" . Yii::app()->baseUrl . "/images/icons/spin.svg' />";
+        $ContactModel = new Contact();
+        $Contact = $ContactModel->gat_contact();
+        $logoMini = "<img src='" . Yii::app()->baseUrl . "/images/logo.png' class='img-responsive' alt='Image'>";
+        $iconsloader = "<img src='" . Yii::app()->baseUrl . "/images/icons/spin.svg' />";
 
-$contactSocail = $ContactModel->get_social_media();
-?>
+        $contactSocail = $ContactModel->get_social_media();
+        ?>
     </head>
     <body class="animsition animsition" id="body">
         <!-- Load Facebook SDK for JavaScript -->
@@ -157,8 +157,8 @@ $contactSocail = $ContactModel->get_social_media();
 
         <input value="<?php echo $logoMini ?>" id="logomini" type="hidden" />
         <?php
-$Categorys = Category::model()->findAll();
-?>
+        $Categorys = Category::model()->findAll();
+        ?>
         <div class="home-1" id="page" style="margin-bottom:0px;">
             <!-- Menu Nav -->
             <div id="kkmenusidebar">
@@ -170,25 +170,25 @@ $Categorys = Category::model()->findAll();
                     <li><a class="active" href="<?php echo Yii::app()->createUrl('frontend/product') ?>" >PRODUCT</a>
                         <ul>
                             <?php
-foreach ($Categorys as $rsCategory):
-?>
-                                    <li>
-                                        <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array('id' => $rsCategory['id'])) ?>"><?php echo $rsCategory['categoryname'] ?></a>
-                                    </li>
-                            <?php endforeach;?>
+                            foreach ($Categorys as $rsCategory):
+                                ?>
+                                <li>
+                                    <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array('id' => $rsCategory['id'])) ?>"><?php echo $rsCategory['categoryname'] ?></a>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <li>
                         <a href="<?php echo Yii::app()->createUrl('frontend/product') ?>">BRAND</a>
-                        <?php $BrandsMenu = Brand::model()->findAll()?>
+                        <?php $BrandsMenu = Brand::model()->findAll() ?>
                         <ul>
                             <?php foreach ($BrandsMenu as $rsBrandMenu): ?>
                                 <li><a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array('id' => $rsBrandMenu['id'])) ?>"><?php echo $rsBrandMenu['brandname'] ?></a></li>
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <li><a href="<?php echo Yii::app()->createUrl('site/story') ?>" >STORY</a>
-                        <li><a href="<?php echo Yii::app()->createUrl('site/findstore') ?>" >FIND STORE</a>
+                    <li><a href="<?php echo Yii::app()->createUrl('site/findstore') ?>" >FIND STORE</a>
                     <li>
                         <a href="<?php echo Yii::app()->createUrl('frontend/article') ?>">BLOG</a>
                         <ul>
@@ -196,12 +196,12 @@ foreach ($Categorys as $rsCategory):
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/article/index', array('category' => $articleCategorys['id'])) ?>"><?php echo $articleCategorys['category'] ?></a>
                                 </li>
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <!--
                     <li>
-                        <a href="<?php //Yii::app()->createUrl('contactuser/create') ?>">CONTACT</a>
+                        <a href="<?php //Yii::app()->createUrl('contactuser/create')   ?>">CONTACT</a>
                     </li>
                     -->
                 </ul>
@@ -228,7 +228,7 @@ foreach ($Categorys as $rsCategory):
                                                 <li id="lisubmenu">
                                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array('id' => $rsCategory['id'])) ?>"><?php echo $rsCategory['categoryname'] ?></a>
                                                 </li>
-                                            <?php endforeach;?>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </li>
                                     <!--
@@ -241,14 +241,14 @@ foreach ($Categorys as $rsCategory):
                                     <?php
 //foreach ($Categorys as $rsCategory):
 //$Types = ProductType::model()->findAll("category=:id", array(":id" => $rsCategory['id']));
-?>
+                                    ?>
                                                             <div class="col-md-4 col-lg-4 col-sm-4">
-                                                                <label><?php //echo $rsCategory['categoryname']                                                ?></label>
+                                                                <label><?php //echo $rsCategory['categoryname']                                                  ?></label>
                                                                 <hr style="border-bottom: #cccccc solid 1px; margin-top: 0px; margin-bottom: 5px;"/>
                                     <?php
 //foreach ($Types as $type):
-?>
-                                                                    <a href=""><?php //echo $type['type_name']                                             ?></a>
+                                    ?>
+                                                                    <a href=""><?php //echo $type['type_name']                                               ?></a>
                                     <?php //endforeach;     ?>
                                                             </div>
                                     <?php //endforeach;      ?>
@@ -265,18 +265,18 @@ foreach ($Categorys as $rsCategory):
 
                                             <?php foreach ($BrandsMenu as $rsBrandMenu): ?>
                                                 <li id="lisubmenu"><a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array('id' => $rsBrandMenu['id'])) ?>"><?php echo $rsBrandMenu['brandname'] ?></a></li>
-                                            <?php endforeach;?>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="<?=Yii::app()->createUrl('site/story')?>">Story</a>
+                                        <a href="<?= Yii::app()->createUrl('site/story') ?>">Story</a>
                                     </li>
                                     <li>
-                                        <a href="<?=Yii::app()->createUrl('site/findstore')?>">Find Store</a>
+                                        <a href="<?= Yii::app()->createUrl('site/findstore') ?>">Find Store</a>
                                     </li>
                                     <!--
                                     <li>
-                                        <a href="<?php //Yii::app()->createUrl('contactuser/create') ?>">Contact</a>
+                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')   ?>">Contact</a>
                                     </li>
                                     -->
                                 </ul>
@@ -322,14 +322,14 @@ foreach ($Categorys as $rsCategory):
                 <div class="font-THK" style="padding: 10px; color: #ffffff; background: none;border-bottom: #cccccc solid 0px; text-align: center; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; z-index:1;">
                     <div class="container">
                         <?php
-$this->widget('zii.widgets.CBreadcrumbs', array(
-	'homeLink' => '<i class="fa fa-home"></i> ' . CHtml::link('home', Yii::app()->createUrl('site/index')),
-	'links' => $this->breadcrumbs,
-));
-?><!-- breadcrumbs -->
+                        $this->widget('zii.widgets.CBreadcrumbs', array(
+                            'homeLink' => '<i class="fa fa-home"></i> ' . CHtml::link('home', Yii::app()->createUrl('site/index')),
+                            'links' => $this->breadcrumbs,
+                        ));
+                        ?><!-- breadcrumbs -->
                     </div>
                 </div>
-            <?php endif?>
+            <?php endif ?>
 
             <?php echo $content; ?>
         </div>
@@ -346,7 +346,7 @@ $this->widget('zii.widgets.CBreadcrumbs', array(
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array("id" => $Category['id'])) ?> "><?php echo $Category['categoryname'] ?></a>
                                 </li>
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -359,7 +359,7 @@ $this->widget('zii.widgets.CBreadcrumbs', array(
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array("id" => $rsBrandMenu['id'])) ?> "><?php echo $rsBrandMenu['brandname'] ?></a>
                                 </li>
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -372,7 +372,7 @@ $this->widget('zii.widgets.CBreadcrumbs', array(
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/article/index', array('category' => $articleCategorys['id'])) ?> "><?php echo $articleCategorys['category'] ?></a>
                                 </li>
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
 
@@ -394,8 +394,8 @@ $this->widget('zii.widgets.CBreadcrumbs', array(
 
                 <div class="social-links">
                     <?php foreach ($contactSocail as $rsSocail): ?>
-                    <a href="<?php echo $rsSocail['account'] ?>" target="_bank"><i class="<?php echo $rsSocail['fronticon'] ?>"></i></a>
-                <?php endforeach;?>
+                        <a href="<?php echo $rsSocail['account'] ?>" target="_bank"><i class="<?php echo $rsSocail['fronticon'] ?>"></i></a>
+                    <?php endforeach; ?>
 
                     <p class="pull-right"><a href="<?php echo Yii::app()->createUrl('backend/backend') ?> " target="_blank">Administrator</a></p>
                 </div> <!-- End row -->
@@ -404,66 +404,66 @@ $this->widget('zii.widgets.CBreadcrumbs', array(
 
 
         </footer>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/jquery.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/bootstrap.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/function-check-viewport.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/slick.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/select2.full.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/imagesloaded.pkgd.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/jquery.mmenu.all.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/rellax.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/isotope.pkgd.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/bootstrap-notify.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/bootstrap-slider.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/in-view.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/countUp.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/animsition.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/function-check-viewport.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/slick.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/select2.full.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/imagesloaded.pkgd.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.mmenu.all.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/rellax.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/isotope.pkgd.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap-notify.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap-slider.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/in-view.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/countUp.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/animsition.min.js"></script>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/settings.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/layers.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/navigation.css" />
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/global.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/global.js"></script>
         <!--
-        <script src="<?php //Yii::app()->baseUrl;                            ?>/themes/kstudio/js/config-banner-home-1.js"></script>
+        <script src="<?php //Yii::app()->baseUrl;                              ?>/themes/kstudio/js/config-banner-home-1.js"></script>
         -->
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-mm-menu.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-set-bg-blog-thumb.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-isotope-product-home-1.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-isotope-product-home-2.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-mm-menu.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-set-bg-blog-thumb.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-isotope-product-home-1.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-isotope-product-home-2.js"></script>
 
 
 
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-carousel.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel.js"></script>
 
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-carousel-thumbnail.js"></script>
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-carousel-product-quickview.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel-thumbnail.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel-product-quickview.js"></script>
         <!-- Demo Only-->
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/demo-add-to-cart.js"></script>
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/demo-add-to-cart.js"></script>
 
         <!-- Jquery.Bxslide-->
-        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/jquery.bxslider/jquery.bxslider.css" media="screen">
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/jquery.bxslider/jquery.bxslider.js"></script>
+        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.css" media="screen">
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.js"></script>
 
         <!-- fancybox -->
-        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.css" media="screen">
-        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.js"></script>
+        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.css" media="screen">
+        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.js"></script>
 
         <!-- images hover effect -->
-        <link href="<?=Yii::app()->baseUrl;?>/themes/kstudio/css/images-hover-effect.css" rel="stylesheet" type="text/css" />
+        <link href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/css/images-hover-effect.css" rel="stylesheet" type="text/css" />
 
         <!-- Gallery -->
-        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
-        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
+        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
+        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
 
         <script tyle="text/javascript">
                             setScreen();
