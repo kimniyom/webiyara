@@ -4,7 +4,7 @@
     src: url('font/THK2DJuly8Bold.ttf');
 }
 html {
-    font-family: 'THK';
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -16,7 +16,7 @@ html {
 }
 
 .home-footer .home-address{
-    font-family: THK;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 16px;
 }
@@ -59,16 +59,16 @@ html {
 
 .home-footer .footer-cat {
     color:#e0cd8b;
-    font-size: 20px;
-    font-family: 'THK';
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .home-footer .footer-cat-links a {
     color:#e0cd8d;
-    font-family: 'THK';
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .home-footer .footer-cat-links.active > li a {
@@ -231,7 +231,7 @@ html {
 
     .home-footer .footer-cat {
         color:#e0cd8b;
-        font-family: 'THK';
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin-left: 20px;
         margin-bottom: 0px;
     }
@@ -270,7 +270,7 @@ html {
 
     .home-footer .footer-cat-links a {
         color:#e0cd8b;
-        font-family: 'THK';
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         pointer-events: none;
     }
 
