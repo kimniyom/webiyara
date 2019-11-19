@@ -60,11 +60,11 @@
         }
     }
 
-
-
     ul{
         list-style-type: none;
     }
+
+
 </style>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.js"></script>
@@ -92,6 +92,7 @@
                 }
             },
             'onUploadComplete': function(file, data, response) {
+                window.location.reload();
                 //alert(data);
                 //load_data();
             }
@@ -105,12 +106,26 @@ $this->breadcrumbs = array(
 );
 ?>
 <h4>Manage webpage</h4>
+
 <div style="padding: 10px;">
     <?php $modelPage = new Page(); ?>
     <?php
     $r = 0;
     foreach ($layout as $rs):
         $r++;
+        $rowId = $rs['row_id'];
+        $sql = "select count(*) as total from layoutcontent where pageid = '0' and row_id = ' $rowId'  and images != '' ";
+        $rsCount = Yii::app()->db->createCommand($sql)->queryRow();
+        $rowImages = $rsCount['total'];
+
+        //Reverse
+        $sqlReverse = "select * from layoutreverse where pageid = '0' and rowid = '$rowId'";
+        $rsReverse = Yii::app()->db->createCommand($sqlReverse)->queryRow();
+        if ($rsReverse['rowid'] == $rowId) {
+            $revers = "1";
+        } else {
+            $revers = "0";
+        }
         ?>
         <style type="text/css">
             @media (min-width:992px){
@@ -126,21 +141,42 @@ $this->breadcrumbs = array(
         </style>
         <div class="row" style="margin-top:0px; clear: both;">
             <div class="col-md-12 col-lg-12" style="padding-left:0px;">
-                <button type="button" class="btn btn-warning " style="z-index: 5;" onclick="deleteRow('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')">
+                <button type="button" class="btn btn-link" style="z-index: 5;" onclick="deleteRow('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')">
                     <i class="fa fa-trash"></i> Delete Row <?php echo $r ?>
                 </button>
+                <!-- ถ้า columns = 2-->
+                <?php if ($rs['columns'] == 2) { ?>
+                    <?php if ($revers == 1) { ?>
+                        <input type="checkbox" checked="checked" onclick="delRevers('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')"/> Reverse Columns Responsive
+                    <?php } else { ?>
+                        <input type="checkbox" onclick="addRevers('<?php echo $rs['pageid'] ?>', '<?php echo $rs['row_id'] ?>')"/> Reverse Columns Responsive
+                    <?php } ?>
+                <?php } ?>
             </div>
         </div>
         <div class="row display-flex<?php echo $r ?>">
             <?php
+            if ($revers == 1) {
+                $reversClassLeft = " col-md-push-6";
+                $reversClassRight = " col-md-pull-6";
+            } else {
+                $reversClassLeft = "";
+                $reversClassRight = "";
+            }
+
             for ($i = 1; $i <= ($rs['columns']); $i++):
                 $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
+                if ($i == 1) {
+                    $classRevers = $reversClassLeft;
+                } else if ($i == 2) {
+                    $classRevers = $reversClassRight;
+                }
                 ?>
-                <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
-                    <div class="btn-group pull-right" role="group" aria-label="..." style="position: absolute; top: 0px; right: 0px; z-index: 5;">
-                        <button type="button" class="btn btn-default" onclick="popupImages('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-image"></i> Image</button>
-                        <button type="button" class="btn btn-default" onclick="popupTextcontent('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-pencil"></i> Text</button>
-                        <button type="button" class="btn btn-default" onclick="popupLink('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-link"></i> Link</button>
+                <div style="padding:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
+                    <div class="btn-group pull-right" role="group" aria-label="..." style="position: absolute; top: 0px; right: 0px; z-index: 5; opacity: 0.8;">
+                        <button type="button" class="btn btn-primary btn-sm" title="image" onclick="popupImages('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-image"></i></button>
+                        <button type="button" class="btn btn-primary btn-sm" title="content" onclick="popupTextcontent('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-pencil"></i></button>
+                        <button type="button" class="btn btn-primary btn-sm" title="link" onclick="popupLink('<?php echo $contentLayout['id'] ?>')"><i class="fa fa-link"></i></button>
                     </div>
                     <!--
                         #### ถ้ามีรูปภาพ ####
@@ -160,8 +196,9 @@ $this->breadcrumbs = array(
                         <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
                     <?php } else { ?>
                         <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
-                            <div class="v-none-img">
-                                <div class="vertical-center-none-img">
+
+                            <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>">
+                                <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
                                     <div>
                                         <?php echo $contentLayout['content'] ?>
                                         <?php if ($contentLayout['link']) { ?>
@@ -173,7 +210,7 @@ $this->breadcrumbs = array(
                                 </div>
                             </div>
                         <?php } else { ?>
-                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+                            <div style="position: relative; width: 100%; height: 100%;  margin-top: 30px;">
                                 <div class="box-center" style=" border: #004b63 dashed 2px;">
                                     <div style="font-family: Th;">No Data</div>
                                 </div>
@@ -185,7 +222,7 @@ $this->breadcrumbs = array(
         </div>
     <?php endforeach; ?>
     <?php $rownew = ($r + 1) ?>
-    <div class="row" style="margin-top:20px;">
+    <div class="row" style="margin-top:50px;">
         <div class="col-md-12 col-lg-12" style="padding:0px;">
             <button class="btn btn-primary btn-block" style=" border: darkgray dashed 3px; text-align: center;  height: 100px;" onclick="popupLayout()">
                 <i class="fa fa-plus"></i> Add Row
@@ -391,10 +428,7 @@ $this->breadcrumbs = array(
         var id = $("#idlink").val();
         var link = $("#link").val();
         var linktext = $("#linktext").val();
-        if (link == "" || linktext == "") {
-            alert("Warning ...!");
-            return false;
-        }
+
         var url = "<?php echo Yii::app()->createUrl('backend/page/addlink') ?>";
         var data = {
             id: id,
@@ -420,6 +454,29 @@ $this->breadcrumbs = array(
             });
         }
     }
+
+    function delRevers(pageId, rowId) {
+        var url = "<?php echo Yii::app()->createUrl('backend/page/delrevers') ?>";
+        var data = {
+            pageid: pageId,
+            rowid: rowId
+        };
+        $.post(url, data, function(datas) {
+            window.location.reload();
+        });
+    }
+
+    function addRevers(pageId, rowId) {
+        var url = "<?php echo Yii::app()->createUrl('backend/page/addrevers') ?>";
+        var data = {
+            pageid: pageId,
+            rowid: rowId
+        };
+        $.post(url, data, function(datas) {
+            window.location.reload();
+        });
+    }
+
 </script>
 
 

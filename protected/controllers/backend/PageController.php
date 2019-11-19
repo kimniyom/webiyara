@@ -194,6 +194,28 @@ class PageController extends Controller {
 
         Yii::app()->db->createCommand()
                 ->delete("layoutcontent", "pageid = '$pageid' and row_id = '$rowid' ");
+
+        Yii::app()->db->createCommand()
+                ->delete("layoutreverse", "pageid = '$pageid' and rowid = '$rowid'");
+    }
+
+    public function actionDelrevers() {
+        $rowid = Yii::app()->request->getPost('rowid');
+        $pageid = Yii::app()->request->getPost('pageid');
+
+        Yii::app()->db->createCommand()
+                ->delete("layoutreverse", "pageid = '$pageid' and rowid = '$rowid'");
+    }
+
+    public function actionAddrevers() {
+        $rowid = Yii::app()->request->getPost('rowid');
+        $pageid = Yii::app()->request->getPost('pageid');
+        $data = array(
+            "pageid" => $pageid,
+            "rowid" => $rowid
+        );
+        Yii::app()->db->createCommand()
+                ->insert("layoutreverse", $data);
     }
 
 }

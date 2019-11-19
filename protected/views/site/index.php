@@ -46,7 +46,9 @@
     }
 
     .btn-links:hover {
-        background-color: #212121;
+        background-color: #ffffff;
+        color:#000000;
+        opacity: 1;
     }
 
     .btn-links focus{
@@ -54,13 +56,15 @@
     }
 
     .btn-links {
-        border-radius: 18px;
+        border-radius: 30px;
         border: none;
         text-align:center;
-        background: none;
+        background: #212121;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 14px;
         transition:all .2s ease-in;
+        padding: 10px;
+        opacity: 0.5;
     }
 
 </style>
@@ -75,6 +79,19 @@ $modelPage = new Page();
     $r = 0;
     foreach ($layout as $rs):
         $r++;
+        $rowId = $rs['row_id'];
+        $sql = "select count(*) as total from layoutcontent where pageid = '0' and row_id = ' $rowId'  and images != '' ";
+        $rsCount = Yii::app()->db->createCommand($sql)->queryRow();
+        $rowImages = $rsCount['total'];
+
+        //Reverse
+        $sqlReverse = "select * from layoutreverse where pageid = '0' and rowid = '$rowId'";
+        $rsReverse = Yii::app()->db->createCommand($sqlReverse)->queryRow();
+        if ($rsReverse['rowid'] == $rowId) {
+            $revers = "1";
+        } else {
+            $revers = "0";
+        }
         ?>
         <style type="text/css">
             @media (min-width:992px){
@@ -90,12 +107,23 @@ $modelPage = new Page();
         </style>
         <div class="hideme">
             <div class="row display-flex<?php echo $r ?>">
-
                 <?php
+                if ($revers == 1) {
+                    $reversClassLeft = " col-md-push-6";
+                    $reversClassRight = " col-md-pull-6";
+                } else {
+                    $reversClassLeft = "";
+                    $reversClassRight = "";
+                }
                 for ($i = 1; $i <= ($rs['columns']); $i++):
                     $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
+                    if ($i == 1) {
+                        $classRevers = $reversClassLeft;
+                    } else if ($i == 2) {
+                        $classRevers = $reversClassRight;
+                    }
                     ?>
-                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?>">
+                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
 
                         <!--
                             #### ถ้ามีรูปภาพ ####
@@ -119,8 +147,8 @@ $modelPage = new Page();
                             <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
                         <?php } else { ?>
                             <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
-                                <div class="v-none-img">
-                                    <div class="vertical-center-none-img">
+                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>">
+                                    <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
                                         <div>
                                             <?php echo $contentLayout['content'] ?>
                                             <?php if ($contentLayout['link']) { ?>
