@@ -6092,3 +6092,1418 @@ Stack trace:
 REQUEST_URI=/webiyara/assets/4fc0a372/bootstrap/css/bootstrap.min.css
 HTTP_REFERER=http://localhost/webiyara/backend/page
 ---
+2019/11/22 09:48:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/22 09:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/22 09:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/
+---
+2019/11/22 09:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/story
+---
+2019/11/22 09:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/findstore
+---
+2019/11/22 09:51:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 09:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 09:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 09:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 09:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 09:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 09:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "qwq".' in D:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('qwq')
+#1 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('qwq')
+#2 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/qwq')
+#3 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/qwq
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 09:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/qwq
+---
+2019/11/22 09:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:03:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:20:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 10:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:25:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 10:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/story
+---
+2019/11/22 10:25:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/index/category/2
+---
+2019/11/22 10:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/article/index/category/3
+---
+2019/11/22 10:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 10:27:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/index
+---
+2019/11/22 10:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/brand/brandID/5
+---
+2019/11/22 10:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:28:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/11/22 10:28:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:37:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:41:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/page
+---
+2019/11/22 10:47:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/index
+---
+2019/11/22 10:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/getproduct/category/1/type/004
+---
+2019/11/22 10:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 10:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_k7jilynbwbxwzq25krfcah8qdsdtl9.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:20:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:21:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:21:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_983q0lhj447j2zuesf1f12rtfma0ff.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_983q0lhj447j2zuesf1f12rtfma0ff.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:28:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/page/img_983q0lhj447j2zuesf1f12rtfma0ff.jpg".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/page/im...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/page/img_983q0lhj447j2zuesf1f12rtfma0ff.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:29:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:30:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 11:30:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 11:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 11:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 11:37:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 11:39:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 11:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:48:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:50:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:51:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:52:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 11:55:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:31:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:31:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-glass.png".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-glass...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/images/bg-glass.png
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:34:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:34:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:37:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 13:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 14:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 14:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:09:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:11:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/brand/id/1
+---
+2019/11/22 14:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 14:12:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:12:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 14:13:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 14:13:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 14:13:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:13:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/11/22 14:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---
+2019/11/22 14:14:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/11/22 14:14:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:16:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/frontend/product/views/id/P20191028151345
+---
+2019/11/22 14:17:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/site/story
+---
+2019/11/22 14:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/1028c59a/bootstrap/css/bootstrap.min.css".' in D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/1028c59a...')
+#1 D:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/assets/1028c59a/bootstrap/css/bootstrap.min.css
+HTTP_REFERER=http://localhost/webiyara/backend/product/detail_product/product_id/P20191028151345
+---

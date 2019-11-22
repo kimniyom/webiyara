@@ -208,7 +208,7 @@
             </nav>
 
             <!-- -->
-            <header class="header-style-2 nav navbar-fixed-top" id="header-nav" style="background:#0f0f0f;border-bottom: #cccccc solid 0px; padding: 10px;"><!-- /images/bgheader.png -->
+            <header class="header-style-2 nav" id="header-nav" style="background:#0f0f0f;border-bottom: #cccccc solid 0px; padding: 10px;"><!-- /images/bgheader.png -->
                 <div class="container" id="menuBar">
                     <div class="row">
                         <div class="header-1-inner">
@@ -312,7 +312,7 @@
                 </div>
 
             </header>
-            <div style="height:73px;"></div>
+
 
             <div id="box-video-title" style="text-align: center;">
                 <i class="fa fa-angle-double-down fa-5x text-warning" id="icon-move" style="display: none;"></i>

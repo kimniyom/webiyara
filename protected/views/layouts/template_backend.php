@@ -54,9 +54,11 @@ $privilege = Privilege::model()->find("user=:user", array(":user" => Yii::app()-
         <script type="text/javascript">
             $(document).ready(function() {
                 Ps.initialize(document.getElementById('sidebar-wrapper'));
+                /*
                 $(document).bind("contextmenu", function(e) {
                     return false;
                 });
+                */
             });
 
             function chkNumber(ele) {
