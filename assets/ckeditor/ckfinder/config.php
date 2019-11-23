@@ -59,7 +59,7 @@ $config['LicenseKey'] = '';
   ATTENTION: The trailing slash is required.
  */
 //$baseUrl = 'http://'.$_SERVER['HTTP_HOST'].'/EDITOR_FILE/';
-$baseUrl = 'http://localhost/iyara/file/';
+$baseUrl = 'https://www.iyaraaudio.com/files/';
 //$baseUrl = 'http://www.headphoneguru.com/2019/files/';
 //$baseUrl = 'http://www.kstudio-th.com/files/';
 

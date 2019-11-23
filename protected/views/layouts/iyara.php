@@ -178,15 +178,6 @@
                             <?php endforeach; ?>
                         </ul>
                     </li>
-                    <li>
-                        <a href="<?php echo Yii::app()->createUrl('frontend/product') ?>">BRAND</a>
-                        <?php $BrandsMenu = Brand::model()->findAll() ?>
-                        <ul>
-                            <?php foreach ($BrandsMenu as $rsBrandMenu): ?>
-                                <li><a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array('id' => $rsBrandMenu['id'])) ?>"><?php echo $rsBrandMenu['brandname'] ?></a></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </li>
                     <li><a href="<?php echo Yii::app()->createUrl('site/story') ?>" >STORY</a>
                     <li><a href="<?php echo Yii::app()->createUrl('site/findstore') ?>" >FIND STORE</a>
                     <li>
@@ -201,7 +192,7 @@
                     </li>
                     <!--
                     <li>
-                        <a href="<?php //Yii::app()->createUrl('contactuser/create')   ?>">CONTACT</a>
+                        <a href="<?php //Yii::app()->createUrl('contactuser/create')        ?>">CONTACT</a>
                     </li>
                     -->
                 </ul>
@@ -231,42 +222,8 @@
                                             <?php endforeach; ?>
                                         </ul>
                                     </li>
-                                    <!--
                                     <li>
-                                        <a class="active" href="shop.html" >MENU <i class="fa fa-angle-down"></i></a>
-                                        <ul id="ulmenufull" style=" position: fixed; left: 0px;width: 100%; padding: 10px;z-index: 1000;  background: none; box-shadow: none;">
-                                            <li>
-                                                <div class="container" style=" background: #FFFFFF; padding-top: 20px; width: 700px;">
-                                                    <div class="row">
-                                    <?php
-//foreach ($Categorys as $rsCategory):
-//$Types = ProductType::model()->findAll("category=:id", array(":id" => $rsCategory['id']));
-                                    ?>
-                                                            <div class="col-md-4 col-lg-4 col-sm-4">
-                                                                <label><?php //echo $rsCategory['categoryname']                                                  ?></label>
-                                                                <hr style="border-bottom: #cccccc solid 1px; margin-top: 0px; margin-bottom: 5px;"/>
-                                    <?php
-//foreach ($Types as $type):
-                                    ?>
-                                                                    <a href=""><?php //echo $type['type_name']                                               ?></a>
-                                    <?php //endforeach;     ?>
-                                                            </div>
-                                    <?php //endforeach;      ?>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    -->
-                                    <li>
-                                        <a href="<?php echo Yii::app()->createUrl('frontend/product') ?>">brand <i class="fa fa-angle-down"></i></a>
-
-                                        <ul id="ulmenu" style="max-height:500px; overflow-x:hidden; overflow-y:auto;">
-
-                                            <?php foreach ($BrandsMenu as $rsBrandMenu): ?>
-                                                <li id="lisubmenu"><a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array('id' => $rsBrandMenu['id'])) ?>"><?php echo $rsBrandMenu['brandname'] ?></a></li>
-                                            <?php endforeach; ?>
-                                        </ul>
+                                        <a href="<?= Yii::app()->createUrl('frontend/article/index') ?>">Blog</a>
                                     </li>
                                     <li>
                                         <a href="<?= Yii::app()->createUrl('site/story') ?>">Story</a>
@@ -276,7 +233,7 @@
                                     </li>
                                     <!--
                                     <li>
-                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')   ?>">Contact</a>
+                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')        ?>">Contact</a>
                                     </li>
                                     -->
                                 </ul>
@@ -352,19 +309,6 @@
                     <div class="col-3">
                         <div class="link-cat" onclick="footerToggle(this)">
                             <span class="footer-toggle"></span>
-                            <span class="footer-cat">BRAND</span>
-                        </div>
-                        <ul class="footer-cat-links">
-                            <?php foreach ($BrandsMenu as $rsBrandMenu): ?>
-                                <li>
-                                    <a href="<?php echo Yii::app()->createUrl('frontend/product/brand', array("id" => $rsBrandMenu['id'])) ?> "><?php echo $rsBrandMenu['brandname'] ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <div class="link-cat" onclick="footerToggle(this)">
-                            <span class="footer-toggle"></span>
                             <span class="footer-cat" id="headfooter">BLOG</span>
                         </div>
                         <ul class="footer-cat-links">
@@ -375,7 +319,12 @@
                             <?php endforeach; ?>
                         </ul>
                     </div>
-
+                    <div class="col-3">
+                        <div class="link-cat" onclick="footerToggle(this)">
+                            <span class="footer-toggle"></span>
+                            <span class="footer-cat">STORY</span>
+                        </div>
+                    </div>
                     <div class="col-3">
                         <div style="text-align: center;">
                             <img class="logo-footer" src="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo-white.png" alt="headphoneguru" />
@@ -434,7 +383,7 @@
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.video.min.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/global.js"></script>
         <!--
-        <script src="<?php //Yii::app()->baseUrl;                              ?>/themes/kstudio/js/config-banner-home-1.js"></script>
+        <script src="<?php //Yii::app()->baseUrl;                                   ?>/themes/kstudio/js/config-banner-home-1.js"></script>
         -->
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-mm-menu.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-set-bg-blog-thumb.js"></script>

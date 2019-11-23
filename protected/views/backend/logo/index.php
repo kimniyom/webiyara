@@ -2,11 +2,11 @@
 $Config = new Configweb_model();
 ?>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#Filedata').uploadifive({
-            'buttonText': 'กรุณาเลือกรูปภาพ ...',
+            'buttonText': 'select photo ...',
             'auto': true, //เปิดใช้การอัพโหลดแบบอัติโนมัติ
-            //'swf': '<?php //echo Yii::app()->baseUrl          ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
+            //'swf': '<?php //echo Yii::app()->baseUrl              ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
             'uploadScript': "<?= Yii::app()->createUrl('backend/logo/saveupload') ?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             /*
@@ -16,9 +16,9 @@ $Config = new Configweb_model();
             'fileType': ["image/jpg", "image/jpeg", "image/png", "image/PNG", "image/JPG", "image/JPEG"], //กำหนดชนิดของไฟล์ที่สามารถอัพโหลดได้
             'multi': true, //เปิดใช้งานการอัพโหลดแบบหลายไฟล์ในครั้งเดียว
             'queueSizeLimit': 1, //อัพโหลดได้ครั้งละ 5 ไฟล์
-            'onUploadComplete': function (file, data, response) {
+            'onUploadComplete': function(file, data, response) {
                 if (data == 2) {
-                    alert("ขนาดไฟล์ 258 x 59 px เท่านั้น...!");
+                    alert("imagesize 258 x 59 px ...!");
                     return false;
                 } else {
                     window.location.reload();
@@ -37,26 +37,25 @@ $this->breadcrumbs = array(
 
 <div class="well well-sm">
     <h4 style=" font-size: 20px; color: #ff0000;">
-        <i class="fa fa-smile-o"></i> โลโก้
+        <i class="fa fa-smile-o"></i> Logo
     </h4>
 </div>
 <div class="row">
     <div class="col-md-6 col-lg-5">
         <div class="panel panel-default">
-            <div class="panel-heading">อัพโหลด</div>
+            <div class="panel-heading">Upload</div>
             <div class="panel-body">
                 <div class="upload">
                     <ul style=" font-size: 12px;">
-                        <li>อัพโหลดได้เฉพาะ .jpg , .png</li>
-                        <li>อัพโหลดได้ไม่เกินครั้งละ <?php echo $Config->SizeFileUpload() ?></li>
-                        <li>อัพโหลดได้ไม่เกินครั้งละ 1 ไฟล์</li>
-                        <li>ขนาด 258 x 59 px</li>
+                        <li>File Type .jpg , .png</li>
+                        <li>Limit size <?php echo $Config->SizeFileUpload() ?></li>
+                        <li>File size 258 x 59 px</li>
                     </ul>
                     <form>
                         <div id="queue"></div>
                         <div style="width:350px; float:left;">
                             <input id="Filedata" name="Filedata" type="file" multiple="true">
-                            <p style="color:#ff0000;">*ขนาด 258 x 59 px</p>
+                            <p style="color:#ff0000;">*size 258 x 59 px</p>
                         </div>
                         <div style="width:300px; float:left;">
                             <!--
@@ -123,7 +122,7 @@ $this->breadcrumbs = array(
     function set_active(id) {
         var url = "<?php echo Yii::app()->createUrl('backend/logo/set_active') ?>";
         var data = {id: id};
-        $.post(url, data, function (success) {
+        $.post(url, data, function(success) {
             window.location.reload();
         });
     }
@@ -133,7 +132,7 @@ $this->breadcrumbs = array(
         var url = "<?php echo Yii::app()->createUrl('backend/logo/delete') ?>";
         var data = {id: id};
         if (r == true) {
-            $.post(url, data, function (success) {
+            $.post(url, data, function(success) {
                 window.location.reload();
             });
         }

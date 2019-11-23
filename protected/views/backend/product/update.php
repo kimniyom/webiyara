@@ -55,14 +55,7 @@ $this->breadcrumbs = array(
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <label for="">*Brand</label>
-                    <select class="form-control" id="brand">
-                        <option value="">== Select ==</option>
-                        <?php foreach ($brands as $rsbrans): ?>
-                            <option value="<?php echo $rsbrans['id'] ?>" <?php echo ($rsbrans['id'] == $product['brand']) ? "selected" : ""; ?>><?php echo $rsbrans['brandname'] ?></option>
-                        <?php endforeach; ?>
-                    </select>
-
+                    <input type="hidden" value="5" id="brand" name="brand"/>
                     <input type="hidden" id="product_id" name="product_id" class="form-control" value="<?php echo $product['product_id']; ?>" readonly style="width:40%;"/>
 
                     <label for="" >*Product Name</label>
@@ -153,7 +146,7 @@ $this->breadcrumbs = array(
             'auto': true, //เปิดใช้การอัพโหลดแบบอัติโนมัติ
             buttonText: "Upload Photo",
             //'buttonImage': '<?//= Yii::app()->baseUrl ?>/images/image-up-icon.png',
-            //'swf': '<?php //echo Yii::app()->baseUrl               ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
+            //'swf': '<?php //echo Yii::app()->baseUrl                 ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
             'uploadScript': "<?= Yii::app()->createUrl('backend/images/uploadify') ?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             //'width': '128',

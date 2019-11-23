@@ -22,7 +22,7 @@ $Config = new Configweb_model();
             'auto': true, //เปิดใช้การอัพโหลดแบบอัติโนมัติ
             buttonText: "Uoload Photo",
             //'buttonImage': '<?//= Yii::app()->baseUrl ?>/images/image-up-icon.png',
-            //'swf': '<?php //echo Yii::app()->baseUrl           ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
+            //'swf': '<?php //echo Yii::app()->baseUrl            ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
             'uploadScript': "<?= Yii::app()->createUrl('backend/images/uploadify') ?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             //'width': '128',
@@ -81,13 +81,13 @@ $ConfigWeb = new Configweb_model();
                             <option value="">== Select ==</option>
                         </select>
                     </div>
+                    <!--
                     <label for="">*Brand</label>
                     <select class="form-control" id="brand">
-                        <option value="">== Select ==</option>
-                        <?php foreach ($brands as $rsbrans): ?>
-                            <option value="<?php echo $rsbrans['id'] ?>"><?php echo $rsbrans['brandname'] ?></option>
-                        <?php endforeach; ?>
+                        <option value="5">IYARA</option>
                     </select>
+                    -->
+                    <input type="hidden" value="5" id="brand" name="brand"/>
                     <label for="" style="display:none;">ProductCode</label>
                     <input type="hidden" id="product_id" name="product_id" class="form-control" value="<?php echo $product_id; ?>" readonly style="width:40%;"/>
 
@@ -99,10 +99,10 @@ $ConfigWeb = new Configweb_model();
                     <div style="display:none;">
                         <label for="">*Price</label>
                         <input type="text" id="product_price" name="product_price" class="form-control" onKeyUp="if (this.value * 1 != this.value)
-                                  this.value = '';" style="width:30%;" required="required" value="0"/>
+                                    this.value = '';" style="width:30%;" required="required" value="0"/>
                         <label for="">Promotion</label>
                         <input type="text" id="product_price_pro" name="product_price_pro" class="form-control" onKeyUp="if (this.value * 1 != this.value)
-                                  this.value = '';" style="width:30%;"/>
+                                    this.value = '';" style="width:30%;"/>
                         <p style="color:#ff0033;">*ถ้าใส่ราคาโปรหน้าเว็บจะนำราคานี้ไปแสดง</p>
                         <br/>
                         <label for="">*Status</label>

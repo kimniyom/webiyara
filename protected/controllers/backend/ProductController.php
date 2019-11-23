@@ -6,7 +6,6 @@ class ProductController extends Controller {
 
     public function actionIndex() {
         $data['category'] = Category::model()->findAll("active=:active", array(":active" => '1'));
-        $data['brand'] = Brand::model()->findAll();
         $this->render('index', $data);
     }
 
@@ -54,7 +53,7 @@ class ProductController extends Controller {
         $data['product_id'] = "P" . date("YmdHis");
         $data['categorys'] = Category::model()->findAll();
         $data['types'] = ProductType::model()->findAll();
-        $data['brands'] = Brand::model()->findAll();
+        //$data['brands'] = Brand::model()->findAll();
 
         $this->render("createproduct", $data);
     }
@@ -116,7 +115,7 @@ class ProductController extends Controller {
         $products = $product->_get_detail_product($product_id);
         $data['product'] = $products;
         $data['categorys'] = Category::model()->findAll();
-        $data['brands'] = Brand::model()->findAll();
+        //$data['brands'] = Brand::model()->findAll();
         $data['type'] = ProductType::model()->find("type_id=:type", array(":type" => $products['type_id']));
         $data['types'] = ProductType::model()->findAll("category=:category", array(":category" => $products['category']));
         $this->render("//backend/product/update", $data);
