@@ -75,4 +75,11 @@ class BackgroundController extends Controller {
                 ->delete('background', "id = '$id' ");
     }
 
+    public function actionSetoption() {
+        $option = Yii::app()->request->getPost('option');
+        $columns = array("option" => $option);
+        Yii::app()->db->createCommand()
+                ->update("backgroundoption", $columns, "id = '1'");
+    }
+
 }

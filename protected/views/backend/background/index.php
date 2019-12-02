@@ -1,12 +1,21 @@
 <?php
 $Config = new Configweb_model();
+$Background = $Config->GetBackground();
+$Option = $Config->GetBackgroundOption();
+if ($Option == 1) {
+    $style = "background-repeat: no-repeat;background-attachment: fixed;";
+} else if ($Option == 2) {
+    $style = "height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;";
+} else {
+    $style = "";
+}
 ?>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#Filedata').uploadifive({
             'buttonText': 'select photo ...',
             'auto': true, //เปิดใช้การอัพโหลดแบบอัติโนมัติ
-            //'swf': '<?php //echo Yii::app()->baseUrl                                     ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
+            //'swf': '<?php //echo Yii::app()->baseUrl                                                            ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
             'uploadScript': "<?= Yii::app()->createUrl('backend/background/saveupload') ?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             /*
@@ -30,14 +39,19 @@ $this->breadcrumbs = array(
 );
 ?>
 
-
 <div class="row">
     <div class="col-md-12 col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Upload</div>
+            <div class="panel-heading">Background</div>
             <div class="panel-body">
                 <div class="upload">
-                    <div style="height: 100px; width: 100px; background: #000000; float: left; margin-right: 20px;"></div>
+                    <?php if ($Background['id'] == 1) { ?>
+                        <div style="height: 100px; width: 200px; background: #000000; float: left; margin-right: 20px;"></div>
+                    <?php } else { ?>
+                        <div style="height: 100px; width: 200px; float: left; margin-right: 20px; overflow: hidden;">
+                            <img src="<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $Background['background'] ?>" style=" width:200px;"/>
+                        </div>
+                    <?php } ?>
                     <div style=" margin-left: 20px;">
                         <ul style=" font-size: 12px;">
                             <li>File Type .jpg , .png</li>
@@ -67,8 +81,8 @@ $this->breadcrumbs = array(
                     <tr>
                         <th>#</th>
                         <th>Background</th>
-                        <th style="text-align:center;">STATUS</th>
-                        <th style="text-align:center;">DELETE</th>
+                        <th style="text-align:center;">Active</th>
+                        <th style="text-align:center;">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -93,7 +107,7 @@ $this->breadcrumbs = array(
                                 <?php } ?>
                             </td>
                             <td style="text-align:center;">
-                                <?php if ($rs['active'] != '1') { ?>
+                                <?php if ($rs['id'] != '1') { ?>
                                     <button type="button" class="btn btn-danger btn-sm" onclick="delete_logo('<?php echo $rs['id'] ?>')"><i class="fa fa-trash"></i> delete</button>
                                 <?php } ?>
                             </td>
@@ -108,6 +122,18 @@ $this->breadcrumbs = array(
             ?>
         </div>
 
+    </div>
+    <div class="col-md-6 col-lg-5">
+        <div class="panel panel-default">
+            <div class="panel-heading">Option</div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><input type="radio" name="option" checked="<?php echo ($Option == 2) ? "checked" : ""; ?>" onclick="setOption('2')"/> full screen</li>
+                    <li class="list-group-item"><input type="radio" name="option"  <?php echo ($Option == 1) ? "checked" : ""; ?> onclick="setOption('1')"/> fixed</li>
+                    <li class="list-group-item"><input type="radio" name="option" <?php echo ($Option == 0) ? "checked" : ""; ?>  onclick="setOption('0')"/> repeat</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -131,5 +157,13 @@ $this->breadcrumbs = array(
                 window.location.reload();
             });
         }
+    }
+
+    function setOption(option) {
+        var url = "<?php echo Yii::app()->createUrl('backend/background/setoption') ?>";
+        var data = {option: option};
+        $.post(url, data, function(success) {
+            window.location.reload();
+        });
     }
 </script>

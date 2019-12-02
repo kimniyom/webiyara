@@ -21,7 +21,8 @@ $this->menu = array(
     <?php
     $store = Findstore::model()->findAll();
     foreach ($store as $rs):
-        $cName = Country::model()->find("id=:id", array(":id" => $rs['country']))['ct_name_en'];
+        $rsName = Country::model()->find("id=:id", array(":id" => $rs['country']));
+        $cName = $rsName['ct_name_en'];
         ?>
         <div class="col-md-6 col-lg-6">
             <div class="well">

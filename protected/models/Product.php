@@ -92,13 +92,11 @@ class Product {
         t.type_id,
         type_name,
         c.categoryname,
-        b.brandname,
         p.category,
         p.countread,
         p.optionproduct
         FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
         INNER JOIN category c ON p.category = c.id
-        INNER JOIN brand b ON p.brand = b.id
         WHERE p.product_id = '$product_id' ";
         $result = Yii::app()->db->createCommand($sql)->queryRow();
 

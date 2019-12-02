@@ -1,6 +1,6 @@
 <style>
     .inputGroup {
-        background-color: #e0cd8b;
+        background-color: none;
         display: block;
         margin: 0px 0;
         position: relative;
@@ -10,7 +10,7 @@
         width: 100%;
         display: block;
         text-align: left;
-        color: #3C454C;
+        color: #e0cd8b;
         cursor: pointer;
         position: relative;
         z-index: 2;
@@ -36,7 +36,7 @@
         width: 32px;
         height: 32px;
         content: '';
-        border: 2px solid #D1D7DC;
+        border: 0px solid #D1D7DC;
         background-color: #fff;
         background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
         background-repeat: no-repeat;
@@ -52,7 +52,7 @@
         transition: all 200ms ease-in;
     }
     .inputGroup input:checked ~ label {
-        color: #b13538;
+        color: #ffffff;
     }
     .inputGroup input:checked ~ label:before {
         -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
@@ -223,42 +223,28 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" style=" margin: 0px;">
         <div class="col-lg-3 col-md-3" id="filter">
             <div id="box-footer">
-                <div class="panel panel-primary" style=" border: #0f0f0f solid 0px;">
-                    <div class="panel-heading" style=" background: #0f0f0f; border-bottom: none;">
-                        <h4 class="font-supermarket" style="color: #e0cd8b; font-size: 20px;">Category</h4>
-                    </div>
 
-                    <ul class="list-group" id="category">
-                        <?php foreach ($categorys as $category): ?>
-                            <li class="list-group-item" style="padding:0px; background:#e0cd8b;">
-                                <div class="inputGroup">
-                                    <input id="checkbox-example-<?php echo $category['id'] ?>" type="checkbox" name="options[]" value="<?php echo $category['id'] ?>" checked="checked" onclick="Getpage()"/>
-                                    <label for="checkbox-example-<?php echo $category['id'] ?>"><?php echo $category['categoryname'] ?></label>
-                                </div>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <input type="hidden" id="categoryfilter" />
+                <div class="panel-heading" style=" background: none; border-bottom: none;">
+                    <h4 class="font-supermarket" style="color: #e0cd8b; font-size: 20px;">Category</h4>
+
                 </div>
-                <div class="panel panel-info" style=" border: #0f0f0f solid 0px;">
-                    <div class="panel-heading" style=" border-bottom: none; background: #0f0f0f;">
-                        <h4 class="font-supermarket" style="color: #e0cd8b; font-size: 20px;">Brands</h4>
-                    </div>
-                    <ul class="list-group" id="brands">
-                        <?php foreach ($brands as $brand): ?>
-                            <li class="list-group-item" style="padding:0px; background:#e0cd8b;">
-                                <div class="inputGroup">
-                                    <input id="checkbox-examples-<?php echo $brand['id'] ?>" type="checkbox" name="brand[]" value="<?php echo $brand['id'] ?>" checked="checked" onclick="Getpage()"/>
-                                    <label for="checkbox-examples-<?php echo $brand['id'] ?>" ><?php echo $brand['brandname'] ?></label>
-                                </div>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <input type="hidden" id="brandfilter" />
-                </div>
+
+                <ul class="list-group" id="category" style=" border: none; background: none;">
+                    <?php foreach ($categorys as $category): ?>
+                        <li class="list-group-item" style="padding:0px; background:none; border: none;">
+                            <div class="inputGroup">
+                                <input id="checkbox-example-<?php echo $category['id'] ?>" type="checkbox" name="options[]" value="<?php echo $category['id'] ?>" checked="checked" onclick="Getpage()"/>
+                                <label for="checkbox-example-<?php echo $category['id'] ?>"><?php echo $category['categoryname'] ?></label>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+                <input type="hidden" id="categoryfilter" />
+
+
             </div>
         </div>
         <div class="col-lg-9 col-md-9" style="padding:0px;">
@@ -269,7 +255,6 @@
 
 <script type="text/javascript">
     category();
-    brands();
     Getpage();
     function category() {
         var arr = $.map($('#category input:checkbox:checked'), function(e, i) {
@@ -280,22 +265,12 @@
 
     $('#category').delegate('input:checkbox', 'click', category);
 
-    function brands() {
-        var arr = $.map($('#brands input:checkbox:checked'), function(e, i) {
-            return +e.value;
-        });
-        $('#brandfilter').val(arr.join(','));
-    }
-
-    $('#brands').delegate('input:checkbox', 'click', brands);
 
     function Getpage() {
         this.category();
-        this.brands();
         var url = "<?php echo Yii::app()->createUrl('frontend/product/defaultpage') ?>";
         var category = $("#categoryfilter").val();
-        var brand = $("#brandfilter").val();
-        var data = {category: category, brand: brand};
+        var data = {category: category};
         $.post(url, data, function(datas) {
             $("#defaultpage").html(datas);
         });

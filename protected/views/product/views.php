@@ -1,6 +1,9 @@
+<link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/css/styles.css" />
+<link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.css" />
 <style type="text/css" media="screen">
     .hideme{
         opacity:0;
+        margin-top:-300px;
     }
     .vertical-center {
         height: 100%;
@@ -68,15 +71,15 @@
     }
 
     .text-head{
-      text-align:center; color:#ffffff;
-      padding: 20px 50px 0px 50px;
+        text-align:center; color:#ffffff;
+        padding: 20px 50px 0px 50px;
     }
 
     .text-description{
-      text-align: center;
-      padding: 20px 50px 0px 50px;
-      color: #FFFFFF;
-      font-size: 24px;
+        text-align: center;
+        padding: 20px 50px 0px 50px;
+        color: #FFFFFF;
+        font-size: 24px;
     }
 
 </style>
@@ -87,23 +90,23 @@ $modelPage = new Page();
 ?>
 
 <div class="text-head">
-  <?php echo $product['product_name'] ?>
+    <?php echo $product['product_name'] ?>
 </div>
-<div class="text-description">
-  <?php echo $product['description'] ?>
+<div class="text-description" style=" margin-bottom: 20px;">
+    <?php echo $product['description'] ?>
 </div>
 
- <div class="row" style="margin-top:0px;margin:0px;">
+<div class="row" style="margin-top:0px;margin:0px;">
 
     <?php
     $r = 0;
     foreach ($layout as $rs):
         $r++;
         if ($r == 1) {
-      		$class = "";
-      	} else {
-      		$class = "hideme";
-      	}
+            $class = "";
+        } else {
+            $class = "hideme";
+        }
         $rowId = $rs['row_id'];
         $sql = "select count(*) as total from layoutcontent where pageid = '$productid' and row_id = ' $rowId'  and images != '' ";
         $rsCount = Yii::app()->db->createCommand($sql)->queryRow();
@@ -123,15 +126,17 @@ $modelPage = new Page();
                 .row.display-flex<?php echo $r ?> {
                     display: flex;
                     flex-wrap: wrap;
+                    margin:0px;
                 }
                 .row.display-flex<?php echo $r ?> > [class*='col-'] {
                     display: flex;
                     flex-direction: column;
+                    margin:0px;
                 }
             }
         </style>
-        <div class="<?php echo $class ?>">
-            <div class="row display-flex<?php echo $r ?>">
+        <div class="<?php //echo $class ?>">
+            <div class="row display-flex<?php echo $r ?>" style="margin: 0px;">
                 <?php
                 if ($revers == 1) {
                     $reversClassLeft = " col-md-push-6";
@@ -153,10 +158,13 @@ $modelPage = new Page();
                         <!--
                             #### ถ้ามีรูปภาพ ####
                         -->
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                        </div>
                         <?php if ($contentLayout['images']) { ?>
                             <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
                                 <div style="position: absolute; width: 100%; height: 100%;">
-                                    <div class="vertical-center">
+                                    <div class="vertical-center" data-aos="fade-down" data-aos-duration="1000">
                                         <div><?php echo $contentLayout['content'] ?>
                                             <?php if ($contentLayout['link']) { ?>
                                                 <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
@@ -169,10 +177,10 @@ $modelPage = new Page();
                                     </div>
                                 </div>
                             <?php } ?>
-                            <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                            
                         <?php } else { ?>
                             <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
-                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>">
+                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
                                     <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
                                         <div>
                                             <?php echo $contentLayout['content'] ?>
@@ -202,8 +210,14 @@ $modelPage = new Page();
         </div>
     <?php endforeach; ?>
 </div>
+<script src="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.js"></script>
+<script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
 <script type="text/javascript">
-setFont();
+    setFont();
     $(document).ready(function() {
         /* Every time the window is scrolled ... */
         $(window).scroll(function() {
@@ -214,23 +228,23 @@ setFont();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 /* If the object is completely visible in the window, fade it it */
                 if (bottom_of_window > bottom_of_object) {
-                    $(this).animate({'opacity': '1'}, 1000);
+                    $(this).animate({'opacity': '1','margin-top':'0px'}, 1000);
                 }
             });
         });
     });
 
-    function setFont(){
-      var w = window.innerWidth;
-      if(w <= 480){
-        $(".text-head").css({'font-size':'20px'});
-        $(".text-description").css({'font-size':'16px'});
-      } else if(w <= 768){
-        $(".text-head").css({'font-size':'36px'});
-        $(".text-description").css({'font-size':'18px'});
-      } else if(w > 768){
-        $(".text-head").css({'font-size':'50px'});
-        $(".text-description").css({'font-size':'24px'});
-      }
+    function setFont() {
+        var w = window.innerWidth;
+        if (w <= 480) {
+            $(".text-head").css({'font-size': '20px'});
+            $(".text-description").css({'font-size': '16px'});
+        } else if (w <= 768) {
+            $(".text-head").css({'font-size': '36px'});
+            $(".text-description").css({'font-size': '18px'});
+        } else if (w > 768) {
+            $(".text-head").css({'font-size': '50px'});
+            $(".text-description").css({'font-size': '24px'});
+        }
     }
 </script>

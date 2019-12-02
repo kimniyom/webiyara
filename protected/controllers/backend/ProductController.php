@@ -479,6 +479,22 @@ class ProductController extends Controller {
 
         Yii::app()->db->createCommand()
                 ->delete("product", "product_id='$product_id'");
+
+        $sql = "select * from layoutcontent where pageis = '$product_id'";
+        $result = Yii::app()->db->createCommand($sql)->queryAll();
+        foreach ($result as $rs) {
+            if ($rs['images']) {
+                if (file_exists('uploads/page/' . $rs['images'])) {
+                    unlink('uploads/page/' . $rs['images']);
+                }
+            }
+        }
+
+        Yii::app()->db->createCommand()
+                ->delete("layoutcontent", "pageid='$product_id'");
+
+        Yii::app()->db->createCommand()
+                ->delete("layoutreverse", "pageid='$product_id'");
     }
 
     public function actionReview() {

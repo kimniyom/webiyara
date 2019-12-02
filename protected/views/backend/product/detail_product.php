@@ -138,7 +138,6 @@ $ProductModel = new Backend_Product();
         </font><br/>
         <b>Category</b> <?= $product['categoryname'] ?><br/>
         <b>Type</b> <?= $product['type_name'] ?><br/>
-        <b>Brand</b> <?= $product['brandname'] ?><br/>
         <b>Last Update</b> <?php echo $product['d_update']; ?><br/><br/>
         <b>Description</b> <br/>
         <?php echo $product['description'] ?>
@@ -304,27 +303,27 @@ $ProductModel = new Backend_Product();
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-  <!--
+<!--
 <div class="modal fade" tabindex="-1" role="dialog" id="popupText">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Text Content</h4>
-            </div>
-            <div class="modal-body">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Text Content</h4>
+          </div>
+          <div class="modal-body">
 
-                <input type="hidden" id="id" />
-                <textarea id="text_contect" name="text_contect" rows="5" class="form-control" style="z-index:20;"></textarea>
+              <input type="hidden" id="id" />
+              <textarea id="text_contect" name="text_contect" rows="5" class="form-control" style="z-index:20;"></textarea>
 
-            </div>
+          </div>
 
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="addTextcontent()">Save</button>
-            </div>
-        </div>
-    </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="addTextcontent()">Save</button>
+          </div>
+      </div>
+  </div>
 </div>
 -->
 
@@ -382,17 +381,17 @@ $ProductModel = new Backend_Product();
 
 
 <div id="popupText" style="width:100%; height:100%; position: fixed; display: none;top:0px; right: 0px;z-index:10000;background: url('<?php echo Yii::app()->baseUrl ?>/images/black-glass-boxtext.png')">
-  <div style="padding:20px; max-width:700px; min-width:300px; margin:auto; margin-top: 50px;background:#333333;">
-    <p style="cursor: pointer;" onclick="hidePopup()">
-      <i class="fa fa-remove"></i> Close
-    </p>
+    <div style="padding:20px; max-width:700px; min-width:300px; margin:auto; margin-top: 50px;background:#333333;">
+        <p style="cursor: pointer;" onclick="hidePopup()">
+            <i class="fa fa-remove"></i> Close
+        </p>
         <hr/>
-      <input type="hidden" id="id" />
-      <textarea id="text_contect" name="text_contect" rows="5" class="form-control" style="z-index:20;"></textarea>
-      <hr/>
-      <div style="height:30px;">
-        <button type="button" class="btn btn-success btn-sm pull-right" onclick="addTextcontent()"><i class='fa fa-save'></i> Save</button>
-      </div>
+        <input type="hidden" id="id" />
+        <textarea id="text_contect" name="text_contect" rows="5" class="form-control" style="z-index:20;"></textarea>
+        <hr/>
+        <div style="height:30px;">
+            <button type="button" class="btn btn-success btn-sm pull-right" onclick="addTextcontent()"><i class='fa fa-save'></i> Save</button>
+        </div>
     </div>
 </div>
 
@@ -432,9 +431,9 @@ $ProductModel = new Backend_Product();
         filebrowserFlashUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"
     });</script>
 <script type="text/javascript">
-  function hidePopup(){
-    $("#popupText").hide();
-  }
+    function hidePopup() {
+        $("#popupText").hide();
+    }
     function popupLayout() {
         $("#popuplayout").modal();
     }

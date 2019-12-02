@@ -2,7 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <?php $web = new Configweb_model(); ?>
+        <?php
+        $web = new Configweb_model();
+        $Background = $web->GetBackground();
+        $Option = $web->GetBackgroundOption();
+        if ($Option == 1) {
+            $style = "background-repeat: no-repeat;background-attachment: fixed;";
+        } else if ($Option == 2) {
+            $style = "height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;";
+        } else {
+            $style = "";
+        }
+        ?>
         <title>IYARA,iyara,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo.png">
@@ -24,6 +35,9 @@
         <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/css/main.css" />
         <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/css/footer.css" />
         <style>
+            body {
+                overflow-x: hidden;
+            }
             .menuheadphoneguru ul li a{
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 color: #e0cd8b;
@@ -85,8 +99,6 @@
                 }
             }
 
-
-
             #_footer h4{
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-weight: bold;
@@ -123,13 +135,15 @@
                 background: #000000;
             }
 
+            #bodyImg{
+                background: url('<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $Background['background'] ?>') #000000;;
+                <?php echo $style ?>
+            }
+
         </style>
         <?php
         $productModel = new Product();
-        $lastProduct = $productModel->_get_last_product();
-        $bestProduct = $productModel->_get_best_product();
-        $saleProduct = $productModel->_get_sale_products();
-
+        
         $articleModel = new Article();
         $NewsBlog = $articleModel->Get_article_limit(3);
         $articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
@@ -142,7 +156,7 @@
         $contactSocail = $ContactModel->get_social_media();
         ?>
     </head>
-    <body class="animsition animsition" id="body">
+    <body class="animsition animsition" id="<?php echo ($Background['id'] == 1) ? 'body' : 'bodyImg'; ?>">
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -192,7 +206,7 @@
                     </li>
                     <!--
                     <li>
-                        <a href="<?php //Yii::app()->createUrl('contactuser/create')        ?>">CONTACT</a>
+                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                       ?>">CONTACT</a>
                     </li>
                     -->
                 </ul>
@@ -233,7 +247,7 @@
                                     </li>
                                     <!--
                                     <li>
-                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')        ?>">Contact</a>
+                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                       ?>">Contact</a>
                                     </li>
                                     -->
                                 </ul>
@@ -269,7 +283,6 @@
                 </div>
 
             </header>
-
 
             <div id="box-video-title" style="text-align: center;">
                 <i class="fa fa-angle-double-down fa-5x text-warning" id="icon-move" style="display: none;"></i>
@@ -321,8 +334,7 @@
                     </div>
                     <div class="col-3">
                         <div class="link-cat" onclick="footerToggle(this)">
-                            <span class="footer-toggle"></span>
-                            <span class="footer-cat">STORY</span>
+                            <a href="<?php echo Yii::app()->createUrl('site/story') ?>"><span class="footer-cat">STORY</span></a>
                         </div>
                     </div>
                     <div class="col-3">
@@ -355,50 +367,10 @@
         </footer>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.min.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/function-check-viewport.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/slick.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/select2.full.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/imagesloaded.pkgd.min.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.mmenu.all.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/rellax.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/isotope.pkgd.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap-notify.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap-slider.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/in-view.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/countUp.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/animsition.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/settings.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/layers.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/themes/kstudio/revolution/css/navigation.css" />
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/revolution/js/extensions/revolution.extension.video.min.js"></script>
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/global.js"></script>
-        <!--
-        <script src="<?php //Yii::app()->baseUrl;                                   ?>/themes/kstudio/js/config-banner-home-1.js"></script>
-        -->
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-mm-menu.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-set-bg-blog-thumb.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-isotope-product-home-1.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-isotope-product-home-2.js"></script>
-
-
-
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel.js"></script>
-
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel-thumbnail.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-carousel-product-quickview.js"></script>
-        <!-- Demo Only-->
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/demo-add-to-cart.js"></script>
-
         <!-- Jquery.Bxslide-->
         <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.css" media="screen">
         <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.js"></script>
@@ -461,29 +433,5 @@
                                 $(footerBtn).next().toggleClass("active");
                             }
         </script>
-        <!-- WhatsHelp.io widget
-        <script type="text/javascript">
-            (function() {
-                var options = {
-                    facebook: "304494626300538", // Facebook page ID
-                    line: "//line.me/R/ti/p/%40headphoneguru", // Line QR code URL
-                    call_to_action: "Contact IYARA", // Call to action
-                    button_color: "#E74339", // Color of button
-                    position: "left", // Position may be 'right' or 'left'
-                    order: "facebook,line", // Order of buttons
-                };
-                var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-                var s = document.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = url + '/widget-send-button/js/init.js';
-                s.onload = function() {
-                    WhWidgetSendButton.init(host, proto, options);
-                };
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s, x);
-            })();
-        </script>
-        /WhatsHelp.io widget -->
     </body>
 </html>

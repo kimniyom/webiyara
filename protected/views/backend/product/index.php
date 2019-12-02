@@ -10,7 +10,7 @@ $ProductModel = new Product();
     <button type="button" class="btn btn-default"><i class="fa fa-plus"></i> create product</button>
 </a>
 <hr/>
-<div class="row">
+<div class="row" style=" margin: 0px;">
     <?php
     foreach ($category as $rs):
         $Types = ProductType::model()->findAll("category=:category", array(":category" => $rs['id']));

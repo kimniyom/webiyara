@@ -1,6 +1,9 @@
+<link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/css/styles.css" />
+<link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.css" />
 <style type="text/css" media="screen">
     .hideme{
         opacity:0;
+        margin-top:-300px;
     }
     .vertical-center {
         height: 100%;
@@ -8,6 +11,7 @@
         overflow:hidden;
         padding: 10px;
         text-align: center;
+        margin: 0;
     }
 
     .vertical-center div {
@@ -28,6 +32,7 @@
             overflow:hidden;
             padding: 10px;
             text-align: center;
+            margin: 0;
         }
 
         .vertical-center-none-img div {
@@ -41,6 +46,7 @@
         }
 
         .v-none-img{
+            margin: 0;
             position: absolute; width: 100%; height: 100%;
         }
     }
@@ -65,6 +71,7 @@
         transition:all .2s ease-in;
         padding: 10px;
         opacity: 0.5;
+        margin-bottom: 10px;
     }
 
 </style>
@@ -74,127 +81,129 @@ $web = new Configweb_model();
 $modelPage = new Page();
 ?>
 
-<div style="padding: 10px;">
-    <?php
-    $r = 0;
-    foreach ($layout as $rs):
-        $r++;
-        $rowId = $rs['row_id'];
-        $sql = "select count(*) as total from layoutcontent where pageid = '0' and row_id = ' $rowId'  and images != '' ";
-        $rsCount = Yii::app()->db->createCommand($sql)->queryRow();
-        $rowImages = $rsCount['total'];
+<?php
+$r = 0;
+foreach ($layout as $rs):
+    $r++;
+    $rowId = $rs['row_id'];
+    $sql = "select count(*) as total from layoutcontent where pageid = '0' and row_id = ' $rowId'  and images != '' ";
+    $rsCount = Yii::app()->db->createCommand($sql)->queryRow();
+    $rowImages = $rsCount['total'];
 
-        //Reverse
-        $sqlReverse = "select * from layoutreverse where pageid = '0' and rowid = '$rowId'";
-        $rsReverse = Yii::app()->db->createCommand($sqlReverse)->queryRow();
-        if ($rsReverse['rowid'] == $rowId) {
-            $revers = "1";
-        } else {
-            $revers = "0";
-        }
-        ?>
-        <style type="text/css">
-            @media (min-width:992px){
-                .row.display-flex<?php echo $r ?> {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-                .row.display-flex<?php echo $r ?> > [class*='col-'] {
-                    display: flex;
-                    flex-direction: column;
-                }
+    //Reverse
+    $sqlReverse = "select * from layoutreverse where pageid = '0' and rowid = '$rowId'";
+    $rsReverse = Yii::app()->db->createCommand($sqlReverse)->queryRow();
+    if ($rsReverse['rowid'] == $rowId) {
+        $revers = "1";
+    } else {
+        $revers = "0";
+    }
+    ?>
+    <style type="text/css">
+        @media (min-width:992px){
+            .row.display-flex<?php echo $r ?> {
+                display: flex;
+                flex-wrap: wrap;
+                margin:0px;
             }
-        </style>
-        <div class="hideme">
-            <div class="row display-flex<?php echo $r ?>">
-                <?php
-                if ($revers == 1) {
-                    $reversClassLeft = " col-md-push-6";
-                    $reversClassRight = " col-md-pull-6";
-                } else {
-                    $reversClassLeft = "";
-                    $reversClassRight = "";
+            .row.display-flex<?php echo $r ?> > [class*='col-'] {
+                display: flex;
+                flex-direction: column;
+                margin:0px;
+            }
+        }
+    </style>
+    <div>
+        <div class="row display-flex<?php echo $r ?>" style=" margin: 0px;">
+            <?php
+            if ($revers == 1) {
+                $reversClassLeft = " col-md-push-6";
+                $reversClassRight = " col-md-pull-6";
+            } else {
+                $reversClassLeft = "";
+                $reversClassRight = "";
+            }
+            for ($i = 1; $i <= ($rs['columns']); $i++):
+                $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
+                if ($i == 1) {
+                    $classRevers = $reversClassLeft;
+                } else if ($i == 2) {
+                    $classRevers = $reversClassRight;
                 }
-                for ($i = 1; $i <= ($rs['columns']); $i++):
-                    $contentLayout = $modelPage->getlayoutContent("0", $rs['row_id'], $i);
-                    if ($i == 1) {
-                        $classRevers = $reversClassLeft;
-                    } else if ($i == 2) {
-                        $classRevers = $reversClassRight;
-                    }
-                    ?>
-                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
+                ?>
+                <div style="padding:0px; margin:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
 
-                        <!--
-                            #### ถ้ามีรูปภาพ ####
-                        -->
-                        <?php if ($contentLayout['images']) { ?>
-                            <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
-                                <div style="position: absolute; width: 100%; height: 100%;">
-                                    <div class="vertical-center">
-                                        <div><?php echo $contentLayout['content'] ?>
-                                            <?php if ($contentLayout['link']) { ?>
-                                                <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
+                    <!--
+                        #### ถ้ามีรูปภาพ ####
+                    -->
+                    <?php if ($contentLayout['images']) { ?>
+                        <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                            <div style="position: absolute; width: 100%; height: 100%; margin:0px;">
+                                <div class="vertical-center" data-aos="fade-right" data-aos-duration="3000">
+                                    <div><?php echo $contentLayout['content'] ?>
+                                        <?php if ($contentLayout['link']) { ?>
+                                            <a href="<?php echo $contentLayout['link'] ?>">
+                                                <button type="button" class="btn-links">
+                                                    <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+                                                </button>
+                                            </a>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                        <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                        </div>
+                    <?php } else { ?>
+                        <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
+                            <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
+                                    <div>
+                                        <?php echo $contentLayout['content'] ?>
+                                        <?php if ($contentLayout['link']) { ?>
+                                            <center>
+                                                <a href="<?php echo $contentLayout['link'] ?>" >
                                                     <button type="button" class="btn-links">
                                                         <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
                                                     </button>
                                                 </a>
-                                            <?php } ?>
-                                        </div>
+                                            </center>
+                                        <?php } ?>
                                     </div>
                                 </div>
-                            <?php } ?>
-                            <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                            </div>
                         <?php } else { ?>
-                            <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
-                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>">
-                                    <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
-                                        <div>
-                                            <?php echo $contentLayout['content'] ?>
-                                            <?php if ($contentLayout['link']) { ?>
-                                                <center>
-                                                    <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
-                                                        <button type="button" class="btn-links">
-                                                            <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-                                                        </button>
-                                                    </a>
-                                                </center>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
+                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+                                <div class="box-center" style=" border: #004b63 dashed 2px;">
+                                    <div style="font-family: Th;">No Data</div>
                                 </div>
-                            <?php } else { ?>
-                                <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
-                                    <div class="box-center" style=" border: #004b63 dashed 2px;">
-                                        <div style="font-family: Th;">No Data</div>
-                                    </div>
-                                </div>
-                            <?php } ?>
+                            </div>
                         <?php } ?>
-                    </div>
-                <?php endfor; ?>
-            </div>
+                    <?php } ?>
+                </div>
+            <?php endfor; ?>
         </div>
-    <?php endforeach; ?>
-</div>
+    </div>
+<?php endforeach; ?>
+
+    <script src="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
 <script type="text/javascript">
 
     $(document).ready(function() {
-        /* Every time the window is scrolled ... */
         $(window).scroll(function() {
-
-            /* Check the location of each desired element */
             $('.hideme').each(function(i) {
 
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                /* If the object is completely visible in the window, fade it it */
-
                 if (bottom_of_window > bottom_of_object) {
-
-                    $(this).animate({'opacity': '1'}, 1000);
-
+                    $(this).animate({'opacity': '1','margin-top':'0px'}, 1000);
                 }
 
             });
