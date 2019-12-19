@@ -90,8 +90,8 @@ $this->breadcrumbs = array(
 
 <div class="container" style=" padding: 30px;">
     <h4 class="font-supermarket" style="color: #e0cd8b; font-size: 20px;">total <?php echo $count ?> items</h4><br/>
-    <div class="row product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row" id="results">
-    </div>
+    <!-- product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row -->
+    <div class="row" id="results"></div>
 </div>
 
 <div align="center">

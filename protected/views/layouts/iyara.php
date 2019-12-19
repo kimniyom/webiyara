@@ -143,7 +143,7 @@
         </style>
         <?php
         $productModel = new Product();
-        
+
         $articleModel = new Article();
         $NewsBlog = $articleModel->Get_article_limit(3);
         $articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
@@ -157,18 +157,6 @@
         ?>
     </head>
     <body class="animsition animsition" id="<?php echo ($Background['id'] == 1) ? 'body' : 'bodyImg'; ?>">
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id))
-                    return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
         <input value="<?php echo $logoMini ?>" id="logomini" type="hidden" />
         <?php
         $Categorys = Category::model()->findAll();
@@ -206,7 +194,7 @@
                     </li>
                     <!--
                     <li>
-                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                       ?>">CONTACT</a>
+                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                            ?>">CONTACT</a>
                     </li>
                     -->
                 </ul>
@@ -247,7 +235,7 @@
                                     </li>
                                     <!--
                                     <li>
-                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                       ?>">Contact</a>
+                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                            ?>">Contact</a>
                                     </li>
                                     -->
                                 </ul>
@@ -305,6 +293,21 @@
         </div>
         <footer class="home-footer">
             <div class="container">
+                <div style="text-align: center;">
+                    <div style="text-align: center; margin-top:20px;">
+                        <img class="logo-footer" src="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo-white.png" />
+                    </div>
+                    <br/>
+                    <div style="text-align: center; width: 100%; margin-bottom: 20px; color:#FFFFFF;">
+                        <div style=" text-align:center; max-width: 500px;margin:auto;">
+                            <span><?php echo $Contact['address'] ?></span><br/>
+                            <span class="lnr lnr-phone-handset icon"></span>
+                            <span><?php echo $Contact['tel'] ?></span><br/>
+                            <span class="lnr lnr-envelope icon"></span>
+                            <span><?php echo $Contact['email'] ?></span>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" style="padding-bottom: 10px;">
                     <div class="col-3">
                         <div class="link-cat" onclick="footerToggle(this)">
@@ -338,16 +341,8 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <div style="text-align: center;">
-                            <img class="logo-footer" src="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo-white.png" alt="headphoneguru" />
-                        </div>
-                        <br/>
-                        <div class="home-address" style=" text-align:center;">
-                            <span><?php echo $Contact['address'] ?></span><br/>
-                            <span class="lnr lnr-phone-handset icon"></span>
-                            <span><?php echo $Contact['tel'] ?></span><br/>
-                            <span class="lnr lnr-envelope icon"></span>
-                            <span><?php echo $Contact['email'] ?></span>
+                        <div class="link-cat" onclick="footerToggle(this)">
+                            <a href="<?php echo Yii::app()->createUrl('site/findstore') ?>"><span class="footer-cat">FIND STORE</span></a>
                         </div>
                     </div>
 
@@ -390,10 +385,10 @@
                             setScreen();
                             $(window).scroll(function() {
                                 if ($(this).scrollTop()) {
-                                    //$("#header-nav").addClass("nav navbar-fixed-top");
+                                    $("#header-nav").addClass("nav navbar-fixed-top");
                                     $("#icon-move").hide();
                                 } else {
-                                    //$("#header-nav").removeClass("nav navbar-fixed-top");
+                                    $("#header-nav").removeClass("nav navbar-fixed-top");
                                 }
                             });
                             //getMenu();

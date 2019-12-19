@@ -3,7 +3,6 @@
 <style type="text/css" media="screen">
     .hideme{
         opacity:0;
-        margin-top:-300px;
     }
     .vertical-center {
         height: 100%;
@@ -48,8 +47,47 @@
         .v-none-img{
             margin: 0;
             position: absolute; width: 100%; height: 100%;
+            background: rgba(69,67,59,1);
+            background: -moz-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(69,67,59,1)), color-stop(100%, rgba(0,0,0,1)));
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: radial-gradient(ellipse at center, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45433b', endColorstr='#000000', GradientType=1 );
         }
     }
+
+
+
+    @media (min-width:480px){
+        .v-none-img{
+            background: rgba(69,67,59,1);
+            background: -moz-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(69,67,59,1)), color-stop(100%, rgba(0,0,0,1)));
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: radial-gradient(ellipse at center, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45433b', endColorstr='#000000', GradientType=1 );
+            padding-top: 50px; padding-bottom: 50px;
+        }
+    }
+
+    @media (min-width:350px){
+        .v-none-img{
+            background: rgba(69,67,59,1);
+            background: -moz-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(69,67,59,1)), color-stop(100%, rgba(0,0,0,1)));
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            background: radial-gradient(ellipse at center, rgba(69,67,59,1) 0%, rgba(0,0,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45433b', endColorstr='#000000', GradientType=1 );
+            padding-top: 50px; padding-bottom: 50px;
+        }
+    }
+
 
     .btn-links:hover {
         background-color: #ffffff;
@@ -76,6 +114,7 @@
 
 </style>
 <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/css/headphoneguru.css" />
+
 <?php
 $web = new Configweb_model();
 $modelPage = new Page();
@@ -153,7 +192,7 @@ foreach ($layout as $rs):
                             </div>
                         <?php } ?>
                         <div data-aos="fade-up" data-aos-duration="1000">
-                        <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+                            <img src="<?= Yii::app()->baseUrl; ?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
                         </div>
                     <?php } else { ?>
                         <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
@@ -187,12 +226,12 @@ foreach ($layout as $rs):
     </div>
 <?php endforeach; ?>
 
-    <script src="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.js"></script>
-    <script>
-      AOS.init({
+<script src="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.js"></script>
+<script>
+    AOS.init({
         easing: 'ease-in-out-sine'
-      });
-    </script>
+    });
+</script>
 
 <script type="text/javascript">
 
@@ -203,7 +242,7 @@ foreach ($layout as $rs):
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 if (bottom_of_window > bottom_of_object) {
-                    $(this).animate({'opacity': '1','margin-top':'0px'}, 1000);
+                    $(this).animate({'opacity': '1'}, 1000);
                 }
 
             });
@@ -227,8 +266,8 @@ foreach ($layout as $rs):
             });
             $(".text-band").css({'font-size': '30px'});
         } else if (size >= 768) {
-
-            $("#video-title").show();
+            $("#icon-move").show();
+            $("#video-title").hide();
             $(".box-category-item").css({"margin-top": "30px"});
             $('.slider5').bxSlider({
                 slideWidth: 300,

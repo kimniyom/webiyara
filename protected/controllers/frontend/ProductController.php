@@ -87,6 +87,7 @@ class ProductController extends Controller {
         $this->Readproduct($id);
         $data['countreview'] = $this->Countreview($id);
         $data['productid'] = $id;
+        $data['bgproduct'] = $fimg;
         $this->actionSaveviewproduct($id);
         $this->render("//product/views", $data);
     }

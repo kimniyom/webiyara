@@ -9,7 +9,7 @@ return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'headphoneguru',
     //'defaultController' => 'frontend/main',
-    'defaultController' => 'site/index',
+    'defaultController' => 'site/main',
     // preloading 'log' component
     'timeZone' => 'Asia/Bangkok',
     'preload' => array('log'),

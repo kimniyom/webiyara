@@ -100,7 +100,8 @@ $this->breadcrumbs = array(
             </div>
         </div>
     </div>
-    <div class="row product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row" id="results"></div>
+    <!-- product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row -->
+    <div class="row" id="results"></div>
 </div>
 
 <div align="center">

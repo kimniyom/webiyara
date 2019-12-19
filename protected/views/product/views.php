@@ -1,10 +1,18 @@
 <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/css/styles.css" />
 <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.css" />
 <style type="text/css" media="screen">
+    #body{
+        background: #000000;
+        background: url("<?php echo Yii::app()->baseUrl . "/uploads/product/" . $bgproduct; ?>") no-repeat center center fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
     .hideme{
         opacity:0;
-        margin-top:-300px;
     }
+
     .vertical-center {
         height: 100%;
         position: relative;
@@ -24,7 +32,7 @@
 
     }
 
-    @media (min-width:992px){
+    @media (max-width:992px){
         .vertical-center-none-img {
             height: 100%;
             position: relative;
@@ -70,16 +78,73 @@
         opacity: 0.5;
     }
 
-    .text-head{
-        text-align:center; color:#ffffff;
-        padding: 20px 50px 0px 50px;
+    .main-content {
+        margin: 0px;
+        background: rgba(0, 0, 0, 0.8);
+        position: relative;
     }
 
-    .text-description{
+    .main-content .box-title {
+        position: absolute;
+        float: left;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        padding: 20px 50px 0px 50px;
-        color: #FFFFFF;
-        font-size: 24px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        .main-content .box-title .text-head{
+            font-size: 48px;
+            color:#FFFFFF;
+            margin-bottom:20px;
+        }
+
+        .main-content .box-title .text-description{
+            font-size: 22px;
+            color:#FFFFFF;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .main-content .box-title .text-head{
+            font-size: 38px;
+            color:#FFFFFF;
+            margin-bottom:20px;
+        }
+
+        .main-content .box-title .text-description{
+            font-size: 20px;
+            color:#FFFFFF;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .main-content .box-title .text-head{
+            font-size: 32px;
+            color:#FFFFFF;
+            margin-bottom:20px;
+        }
+
+        .main-content .box-title .text-description{
+            font-size: 18px;
+            color:#FFFFFF;
+        }
+    }
+
+
+    @media only screen and (max-width: 468px) {
+        .main-content .box-title .text-head{
+            font-size: 30px;
+            color:#FFFFFF;
+            margin-bottom:20px;
+        }
+
+        .main-content .box-title .text-description{
+            font-size: 18px;
+            color:#FFFFFF;
+        }
+
     }
 
 </style>
@@ -88,14 +153,16 @@
 $web = new Configweb_model();
 $modelPage = new Page();
 ?>
-
-<div class="text-head">
-    <?php echo $product['product_name'] ?>
+<div class="main-content">
+    <div class="box-title">
+        <div class="text-head">
+            <?php echo $product['product_name'] ?>
+        </div>
+        <div class="text-description" style=" margin-bottom: 20px;">
+            <?php echo $product['description'] ?>
+        </div>
+    </div>
 </div>
-<div class="text-description" style=" margin-bottom: 20px;">
-    <?php echo $product['description'] ?>
-</div>
-
 <div class="row" style="margin-top:0px;margin:0px;">
 
     <?php
@@ -135,7 +202,7 @@ $modelPage = new Page();
                 }
             }
         </style>
-        <div class="<?php //echo $class ?>">
+        <div class="<?php //echo $class                                                                                                     ?>">
             <div class="row display-flex<?php echo $r ?>" style="margin: 0px;">
                 <?php
                 if ($revers == 1) {
@@ -177,7 +244,7 @@ $modelPage = new Page();
                                     </div>
                                 </div>
                             <?php } ?>
-                            
+
                         <?php } else { ?>
                             <?php if ($contentLayout['content'] || $contentLayout['link']) { ?>
                                 <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
@@ -212,39 +279,60 @@ $modelPage = new Page();
 </div>
 <script src="<?= Yii::app()->baseUrl; ?>/themes/iyara/dist/aos.js"></script>
 <script>
-      AOS.init({
+    AOS.init({
         easing: 'ease-in-out-sine'
-      });
-    </script>
+    });</script>
 <script type="text/javascript">
-    setFont();
+    //setFont();
+    setHeadBox();
     $(document).ready(function() {
         /* Every time the window is scrolled ... */
         $(window).scroll(function() {
-
+            var h = window.innerHeight;
+            var y = $(this).scrollTop();
+            if (y < h) {
+                $('#body').css({
+                    'background': 'url("<?php echo Yii::app()->baseUrl . "/uploads/product/" . $bgproduct; ?>") no-repeat center center fixed',
+                    'background-position': 'center',
+                    'background-repeat': 'no-repeat',
+                    'background-size': 'cover'
+                });
+            } else {
+                $('#body').css({
+                    'background': 'none',
+                    'background-color': '#000000'
+                });
+            }
             /* Check the location of each desired element */
             $('.hideme').each(function(i) {
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 /* If the object is completely visible in the window, fade it it */
                 if (bottom_of_window > bottom_of_object) {
-                    $(this).animate({'opacity': '1','margin-top':'0px'}, 1000);
+                    $(this).animate({'opacity': '1'}, 1000);
                 }
             });
         });
     });
-
-    function setFont() {
-        var w = window.innerWidth;
-        if (w <= 480) {
-            $(".text-head").css({'font-size': '20px'});
-            $(".text-description").css({'font-size': '16px'});
-        } else if (w <= 768) {
-            $(".text-head").css({'font-size': '36px'});
-            $(".text-description").css({'font-size': '18px'});
-        } else if (w > 768) {
-            $(".text-head").css({'font-size': '50px'});
-            $(".text-description").css({'font-size': '24px'});
-        }
+    function setHeadBox() {
+        var h = window.innerHeight;
+        var height = (h - 100);
+        $(".main-content").css({'height': h});
     }
+
+    /*
+     function setFont() {
+     var w = window.innerWidth;
+     if (w <= 480) {
+     $(".text-head").css({'font-size': '28px'});
+     $(".text-description").css({'font-size': '10px', });
+     } else if (w <= 768) {
+     $(".text-head").css({'font-size': '32px'});
+     $(".text-description").css({'font-size': '20px'});
+     } else if (w > 768) {
+     $(".text-head").css({'font-size': '60px', 'margin-top': '100px'});
+     $(".text-description").css({'font-size': '28px', 'margin-bottom': '100px', 'margin-top': '100px'});
+     }
+     }
+     */
 </script>
