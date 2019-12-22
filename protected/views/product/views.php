@@ -7,7 +7,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
     .hideme{
         opacity:0;
@@ -130,6 +129,11 @@
             font-size: 18px;
             color:#FFFFFF;
         }
+
+        #body{
+            background: #000000;
+            background: url("<?php echo Yii::app()->baseUrl . "/images/bg-product-mobile.jpg"; ?>");
+        }
     }
 
 
@@ -145,6 +149,10 @@
             color:#FFFFFF;
         }
 
+        #body{
+            background: #000000;
+            background: url("<?php echo Yii::app()->baseUrl . "/images/bg-product-mobile.jpg"; ?>");
+        }
     }
 
 </style>
@@ -152,6 +160,7 @@
 <?php
 $web = new Configweb_model();
 $modelPage = new Page();
+$UrlShare = $web->GetFullLink(Yii::app()->request->url);
 ?>
 <div class="main-content">
     <div class="box-title">
@@ -160,6 +169,37 @@ $modelPage = new Page();
         </div>
         <div class="text-description" style=" margin-bottom: 20px;">
             <?php echo $product['description'] ?>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="widget-social-color">
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com/sharer.php?u=<?php echo $UrlShare ?>" target="_blank">
+                                <img src="<?php echo Yii::app()->baseUrl ?>/images/facebook.png" alt="Facebook" style="width:36px;"/>
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Pinterest -->
+                            <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" target="_blank">
+                                <img src="<?php echo Yii::app()->baseUrl ?>/images/pinterest.png" alt="Pinterest" style="width:36px;"/>
+                            </a>
+                        </li>
+                        <li>
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/share?url=<?php echo $UrlShare ?>&amp;text=<?php echo Yii::app()->session['fbtitle']; ?>;hashtags=<?php echo $web->get_webname() ?>" target="_blank">
+                                <img src="<?php echo Yii::app()->baseUrl ?>/images/twitter.png" alt="Twitter" style="width:36px;"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://lineit.line.me/share/ui?url=<?php echo $UrlShare ?>" target="_blank">
+                                <img src="<?php echo Yii::app()->baseUrl ?>/images/line-icon.png" alt="Line" style="width:36px;"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -202,7 +242,7 @@ $modelPage = new Page();
                 }
             }
         </style>
-        <div class="<?php //echo $class                                                                                                     ?>">
+        <div class="<?php //echo $class                                                                                                                                ?>">
             <div class="row display-flex<?php echo $r ?>" style="margin: 0px;">
                 <?php
                 if ($revers == 1) {
@@ -289,14 +329,21 @@ $modelPage = new Page();
         /* Every time the window is scrolled ... */
         $(window).scroll(function() {
             var h = window.innerHeight;
+            var w = window.innerWidth;
             var y = $(this).scrollTop();
             if (y < h) {
-                $('#body').css({
-                    'background': 'url("<?php echo Yii::app()->baseUrl . "/uploads/product/" . $bgproduct; ?>") no-repeat center center fixed',
-                    'background-position': 'center',
-                    'background-repeat': 'no-repeat',
-                    'background-size': 'cover'
-                });
+                if (w > 768) {
+                    $('#body').css({
+                        'background': 'url("<?php echo Yii::app()->baseUrl . "/uploads/product/" . $bgproduct; ?>") no-repeat center center fixed',
+                        'background-position': 'center',
+                        'background-repeat': 'no-repeat',
+                        'background-size': 'cover'
+                    });
+                } else {
+                    $('#body').css({
+                        'background': 'url("<?php echo Yii::app()->baseUrl . "/images/bg-product-mobile.jpg"; ?>")'
+                    });
+                }
             } else {
                 $('#body').css({
                     'background': 'none',

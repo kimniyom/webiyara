@@ -130,7 +130,7 @@ class Configweb_model {
     }
 
     function GetFullLink($url) {
-        return "http://iyaraaudio.com" . $url;
+        return "https://iyaraaudio.com" . $url;
     }
 
     function GetBackground() {

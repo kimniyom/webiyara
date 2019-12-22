@@ -5064,3 +5064,44 @@ Stack trace:
 REQUEST_URI=/webiyara/site/videomobile
 HTTP_REFERER=http://localhost/webiyara/site/index
 ---
+2019/12/20 16:02:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/test
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/12/20 16:02:26 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "qwq". in C:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('qwq')
+#1 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('qwq')
+#2 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/qwq')
+#3 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/qwq
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/12/20 16:12:53 [error] [php] Undefined variable: config (C:\xampp\htdocs\webiyara\protected\views\product\views.php:183)
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(869): ProductController->renderFile()
+#1 C:\xampp\htdocs\webiyara\framework\web\CController.php(782): ProductController->renderPartial()
+#2 C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php(92): ProductController->render()
+#3 unknown(0): ProductController->actionViews()
+#4 C:\xampp\htdocs\webiyara\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\webiyara\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\webiyara\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\webiyara\framework\web\CController.php(286): ProductController->runAction()
+#8 C:\xampp\htdocs\webiyara\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#9 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): ProductController->run()
+#10 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\webiyara\index.php(14): CWebApplication->run()
+REQUEST_URI=/webiyara/frontend/product/views/id/P20191028151345
+in C:\xampp\htdocs\webiyara\protected\views\product\views.php (183)
+in C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php (92)
+in C:\xampp\htdocs\webiyara\index.php (14)
