@@ -4,6 +4,9 @@
         <title>IYARA,iyara,iyaraaudio,audio</title>
         <meta name="keywords" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
         <meta name="description" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
+        <?php
+header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
+?>
         <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl ?>/css/font-awesome-4.3.0/css/font-awesome.min.css">
@@ -143,7 +146,9 @@
             }
         </style>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <!--
         <script async src="https://www.youtube.com/iframe_api"></script>
+    -->
     </head>
 
     <body>
@@ -209,10 +214,19 @@
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script type="text/javascript">
+            var tag = document.createElement('script');
+
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
                         var size = window.innerWidth;
                         if (size < 1024) {
                             window.location = "<?php echo Yii::app()->createUrl('site/index') ?>";
                         }
+
+
+
                         var player;
                         function onYouTubeIframeAPIReady() {
                             player = new YT.Player('video-foreground', {
