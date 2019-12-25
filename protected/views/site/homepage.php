@@ -1,12 +1,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IYARA,iyara,iyaraaudio,audio</title>
         <meta name="keywords" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
         <meta name="description" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
-        <?php
-header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
-?>
+        <?php header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');?>
         <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl ?>/css/font-awesome-4.3.0/css/font-awesome.min.css">
@@ -230,7 +229,7 @@ header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
                         var player;
                         function onYouTubeIframeAPIReady() {
                             player = new YT.Player('video-foreground', {
-                                videoId: 'cIx0b28geB0', // YouTube Video ID
+                                videoId: 'phoWdr9WHcU', // YouTube Video ID
                                 playerVars: {
                                     autoplay: 1, // Auto-play the video on load
                                     controls: 0, // Show pause/play buttons in player
@@ -241,7 +240,7 @@ header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
                                     cc_load_policy: 0, // Hide closed captions
                                     iv_load_policy: 3, // Hide the Video Annotations
                                     autohide: 0, // Hide video controls when playing
-                                    playlist: 'cIx0b28geB0'
+                                    playlist: 'phoWdr9WHcU'
                                 },
                                 events: {
                                     'onReady': playVideo

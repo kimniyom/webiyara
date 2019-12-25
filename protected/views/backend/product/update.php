@@ -15,8 +15,8 @@ $Config = new Configweb_model();
 $ConfigWeb = new Configweb_model();
 $title = "Update " . $product['product_id'];
 $this->breadcrumbs = array(
-    $product['product_name'] => array('backend/product/detail_product/product_id/' . $product['product_id']),
-    $title,
+	$product['product_name'] => array('backend/product/detail_product/product_id/' . $product['product_id']),
+	$title,
 );
 ?>
 
@@ -45,14 +45,14 @@ $this->breadcrumbs = array(
                         <option value="">== Select ==</option>
                         <?php foreach ($categorys as $rscategory): ?>
                             <option value="<?php echo $rscategory['id'] ?>" <?php echo ($rscategory['id'] == $product['category']) ? "selected" : ""; ?>><?php echo $rscategory['categoryname'] ?></option>
-                        <?php endforeach; ?>
+                        <?php endforeach;?>
                     </select>
                     <label for="">*Type</label>
                     <div id="combotype">
                         <select class="form-control" id="type">
                             <?php foreach ($types as $rstypes): ?>
                                 <option value="<?php echo $rstypes['type_id'] ?>" <?php echo ($rstypes['type_id'] == $product['type_id']) ? "selected" : ""; ?>><?php echo $rstypes['type_name'] ?></option>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </select>
                     </div>
                     <input type="hidden" value="5" id="brand" name="brand"/>
@@ -60,8 +60,10 @@ $this->breadcrumbs = array(
 
                     <label for="" >*Product Name</label>
                     <input type="text" id="product_name" name="product_name" class="form-control" value="<?php echo $product['product_name'] ?>"/>
-                    <label>*Description</label>
-                    <textarea class="form-control" id="description" rows="5"><?php echo $product['description'] ?></textarea>
+                    <label>Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="5"><?php echo $product['description'] ?></textarea>
+                    <label>Spect</label>
+                    <textarea class="form-control" id="spect" name="spect" rows="5"><?php echo $product['spect'] ?></textarea>
                     <div style="display:none;">
                         <label for="" >*ราคา</label>
                         <input type="text" id="product_price" name="product_price" class="form-control" onKeyUp="if (this.value * 1 != this.value)
@@ -147,7 +149,7 @@ $this->breadcrumbs = array(
             buttonText: "Upload Photo",
             //'buttonImage': '<?//= Yii::app()->baseUrl ?>/images/image-up-icon.png',
             //'swf': '<?php //echo Yii::app()->baseUrl                 ?>/assets/uploadify/uploadify.swf', //โฟเดอร์ที่เก็บไฟล์ปุ่มอัพโหลด
-            'uploadScript': "<?= Yii::app()->createUrl('backend/images/uploadify') ?>",
+            'uploadScript': "<?=Yii::app()->createUrl('backend/images/uploadify')?>",
             'fileSizeLimit': '<?php echo $Config->SizeFileUpload() ?>', //อัพโหลดได้ครั้งละไม่เกิน 1024kb
             //'width': '128',
             //'height': '132',
@@ -170,6 +172,60 @@ $this->breadcrumbs = array(
 //filebrowserBrowseUrl: 'imgbrowse/imgbrowse.php',
 //filebrowserUploadUrl: 'ckupload.php',
 
+        toolbarGroups: [
+            //{name: 'clipboard', groups: ['clipboard', 'undo']},
+            //{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
+            {name: 'links'},
+            {name: 'insert'},
+            //{ name: 'forms' },
+            {name: 'tools'},
+            //{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+            //{ name: 'others' },
+            //'/',
+            {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+            {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi']},
+            {name: 'styles'},
+            {name: 'colors'}
+            //{ name: 'about' }
+        ],
+        removeButtons: 'Strike,Subscript,Superscript,Anchor,Styles,Specialchar,Language,Flash',
+        filebrowserBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html",
+        filebrowserImageBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html?Type=Images",
+        filebrowserFlashBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html?Type=Flash",
+        filebrowserUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files",
+        filebrowserImageUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images",
+        filebrowserFlashUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"
+    });
+
+     CKEDITOR.replace('description', {
+        image_removeLinkByEmptyURL: true,
+        toolbarGroups: [
+            //{name: 'clipboard', groups: ['clipboard', 'undo']},
+            //{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
+            {name: 'links'},
+            {name: 'insert'},
+            //{ name: 'forms' },
+            {name: 'tools'},
+            //{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+            //{ name: 'others' },
+            //'/',
+            {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+            {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi']},
+            {name: 'styles'},
+            {name: 'colors'}
+            //{ name: 'about' }
+        ],
+        removeButtons: 'Strike,Subscript,Superscript,Anchor,Styles,Specialchar,Language,Flash',
+        filebrowserBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html",
+        filebrowserImageBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html?Type=Images",
+        filebrowserFlashBrowseUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/ckfinder.html?Type=Flash",
+        filebrowserUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files",
+        filebrowserImageUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images",
+        filebrowserFlashUploadUrl: "<?php echo Yii::app()->baseUrl; ?>/assets/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"
+    });
+
+     CKEDITOR.replace('spect', {
+        image_removeLinkByEmptyURL: true,
         toolbarGroups: [
             //{name: 'clipboard', groups: ['clipboard', 'undo']},
             //{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
@@ -241,10 +297,11 @@ $this->breadcrumbs = array(
         var status = $("input[name='status']:checked").val();
         var recommend = $("input[name='recommend']:checked").val();
         var product_detail = CKEDITOR.instances.product_detail.getData();
-        var description = $("#description").val();
+        var description = CKEDITOR.instances.description.getData();
+        var spect = CKEDITOR.instances.spect.getData();
         var bastseller = $("input[name='bastseller']:checked").val();
         var option = $("input[name='option']:checked").val();
-        if (category == '' || product_name == '' || type == '' || brand == '' || description == "") {
+        if (category == '' || product_name == '' || type == '' || brand == '') {
             $("#f_error").show().delay(5000).fadeOut(500);
             return false;
         }
@@ -262,7 +319,8 @@ $this->breadcrumbs = array(
             description: description,
             bastseller: bastseller,
             product_price_pro: product_price_pro,
-            option: option
+            option: option,
+            spect: spect
         };
 
         $.post(url, data, function(success) {

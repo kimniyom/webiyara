@@ -7,45 +7,45 @@
         <meta name="author" content="">
         <title>
             <?php
-            $product_model = new Backend_product();
-            $order_model = new Backend_orders();
-            $web = new Configweb_model();
-            echo $web->get_webname();
+$product_model = new Backend_product();
+$order_model = new Backend_orders();
+$web = new Configweb_model();
+echo $web->get_webname();
 
-            $privilege = Privilege::model()->find("user=:user", array(":user" => Yii::app()->user->id));
-            ?>
+$privilege = Privilege::model()->find("user=:user", array(":user" => Yii::app()->user->id));
+?>
         </title>
         <style type="text/css">
             body{
                 overflow-x: hidden;
             }
         </style>
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/backend/css/system.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/backend/bootstrap/css/bootstrap.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/backend/bootstrap/css/bootstrap-slate.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/DataTables-1.10.7/media/css/dataTables.bootstrap.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/DataTables-1.10.7/extensions/TableTools/css/dataTables.tableTools.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/backend/css/system.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/backend/bootstrap/css/bootstrap.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/backend/bootstrap/css/bootstrap-slate.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/DataTables-1.10.7/media/css/dataTables.bootstrap.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/DataTables-1.10.7/extensions/TableTools/css/dataTables.tableTools.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/font-awesome-4.3.0/css/font-awesome.css"/>
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/backend/css/simple-sidebar.css"/>
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/perfect-scrollbar/css/perfect-scrollbar.css"/>
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/css/card-css/card-css.css"/>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/backend/css/simple-sidebar.css"/>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/perfect-scrollbar/css/perfect-scrollbar.css"/>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/css/card-css/card-css.css"/>
         <!-- Bootstrap CheckBox
         <link rel="stylesheet" href="<?php //echo Yii::app()->baseUrl;                                      ?>/css/bootstrap-checkbox/awesome-bootstrap-checkbox.css" type="text/css" media="all" />
         -->
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/backend/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/backend/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- Magnific Popup core CSS file -->
-        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
         <!-- Data table -->
-        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
-        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/DataTables-1.10.7/media/js/dataTables.bootstrap.js"></script>
-        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/DataTables-1.10.7/extensions/TableTools/js/dataTables.tableTools.js"></script>
+        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/DataTables-1.10.7/media/js/dataTables.bootstrap.js"></script>
+        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/DataTables-1.10.7/extensions/TableTools/js/dataTables.tableTools.js"></script>
         <!-- highcharts -->
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <!--
         <script src="<?//= Yii::app()->baseUrl; ?>/assets/highcharts/themes/dark-unica.js"></script>
         -->
-        <script src="<?= Yii::app()->baseUrl; ?>/assets/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/assets/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 
         <!-- Uploadify -->
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/uploadifynews/uploadifive.css" type="text/css" media="all" />
@@ -116,26 +116,26 @@
                                 <font id="font-th">Log </font><b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <?php if ($privilege['log'] == '1') { ?>
+                                <?php if ($privilege['log'] == '1') {?>
                                     <li><a href="<?php echo Yii::app()->createUrl('backend/logproduct/index') ?>"> - product</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('backend/loguserlogin/index') ?>"> - userlogin</a></li>
                                     <!--
                                     <li><a href="<?php //echo Yii::app()->createUrl('backend/logorders/index')                           ?>"> - orders</a></li>
                                     -->
-                                <?php } else { ?>
+                                <?php } else {?>
                                     <li style=" text-align: center;">No Action</li>
-                                <?php } ?>
+                                <?php }?>
                             </ul>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <?php if (!Yii::app()->user->isGuest) { ?>
-                                <a href="<?= Yii::app()->createUrl('site/logout/') ?>">
+                            <?php if (!Yii::app()->user->isGuest) {?>
+                                <a href="<?=Yii::app()->createUrl('site/logout/')?>">
                                     <span class="glyphicon glyphicon-off"></span>
                                     <font id="font-th">Logout</font>
                                 </a>
-                            <?php } ?>
+                            <?php }?>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -169,30 +169,30 @@
                         <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
                     </div>
 
-                    <?php if ($privilege['shop'] == '1') { ?>
+                    <?php if ($privilege['shop'] == '1') {?>
                         <div class="list-group" id="side1">
 
                             <a href="<?php echo Yii::app()->createUrl('backend/contact') ?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
                                 <i class="fa fa-phone-square"></i> Contact
                             </a>
 
-                            <a href="<?= Yii::app()->createUrl('backend/about') ?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
+                            <a href="<?=Yii::app()->createUrl('backend/about')?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
                                 <i class="fa fa-user-secret"></i> Story
                             </a>
-                            <a href="<?= Yii::app()->createUrl('backend/logo') ?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
+                            <a href="<?=Yii::app()->createUrl('backend/logo')?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
                                 <i class="fa fa-smile-o"></i>  Logo
                             </a>
-                            <a href="<?= Yii::app()->createUrl('backend/web') ?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
+                            <a href="<?=Yii::app()->createUrl('backend/web')?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
                                 <i class="fa fa-text-height"></i>  Name Website
                             </a>
-                            <a href="<?= Yii::app()->createUrl('backend/findstore') ?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
+                            <a href="<?=Yii::app()->createUrl('backend/findstore')?>" class="list-group-item" onclick="setSideMenu('side1', 'side1')">
                                 <i class="fa fa-building"></i>  Find Store
                             </a>
 
                         </div>
-                    <?php } else { ?>
+                    <?php } else {?>
                         <center>No Action</center>
-                    <?php } ?>
+                    <?php }?>
                 </div>
 
                 <!-- List Menu Admin-->
@@ -202,16 +202,16 @@
                         Setting
                         <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
                     </div>
-                    <?php if ($privilege['setting'] == '1') { ?>
+                    <?php if ($privilege['setting'] == '1') {?>
                         <div class="list-group" id="side2">
                             <a href="<?php echo Yii::app()->createUrl('backend/masuser/admin') ?>"
                                class="list-group-item" onclick="setSideMenu('side2', 'side2')"><i class="fa fa-group"></i> Users</a>
                             <a href="<?php echo Yii::app()->createUrl('backend/masuser/create') ?>"
                                class="list-group-item" onclick="setSideMenu('side2', 'side2')"><i class="fa fa-plus"></i> Add User</a>
                         </div>
-                    <?php } else { ?>
+                    <?php } else {?>
                         <center>No Action</center>
-                    <?php } ?>
+                    <?php }?>
                 </div>
 
                 <!-- List รายชื่อ สินค้า -->
@@ -222,19 +222,19 @@
                         Products
                         <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
                     </div>
-                    <?php if ($privilege['product'] == '1') { ?>
+                    <?php if ($privilege['product'] == '1') {?>
                         <div class="list-group" id="side3">
-                            <a href="<?= Yii::app()->createUrl('backend/category/admin') ?>"
+                            <a href="<?=Yii::app()->createUrl('backend/category/admin')?>"
                                class="list-group-item" onclick="setSideMenu('side3', 'side3')"><i class="fa fa-folder-open"></i> Category</a>
-                            <a href="<?= Yii::app()->createUrl('backend/typeproduct/from_add_type') ?>"
+                            <a href="<?=Yii::app()->createUrl('backend/typeproduct/from_add_type')?>"
                                class="list-group-item" onclick="setSideMenu('side3', 'side3')"><i class="fa fa-folder-open"></i> Types</a>
 
-                            <a href="<?= Yii::app()->createUrl('backend/product/index') ?>"
+                            <a href="<?=Yii::app()->createUrl('backend/product/index')?>"
                                class="list-group-item" onclick="setSideMenu('side3', 'side3')"><i class="fa fa-folder-open"></i> Products</a>
                         </div>
-                    <?php } else { ?>
+                    <?php } else {?>
                         <center>No Action</center>
-                    <?php } ?>
+                    <?php }?>
                 </div>
 
                 <!-- List รายชื่อ สินค้า -->
@@ -244,7 +244,7 @@
                         Blog
                         <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
                     </div>
-                    <?php if ($privilege['article'] == '1') { ?>
+                    <?php if ($privilege['article'] == '1') {?>
                         <div class="list-group" id="side4">
                             <a href="<?php echo Yii::app()->createUrl('backend/articlecategory/admin') ?>" class="list-group-item" onclick="setSideMenu('side4', 'side4')">
                                 <i class="fa fa-folder"></i> Category
@@ -256,9 +256,9 @@
                                 <i class="fa fa-newspaper-o"></i> View All
                             </a>
                         </div>
-                    <?php } else { ?>
+                    <?php } else {?>
                         <center>No Action</center>
-                    <?php } ?>
+                    <?php }?>
                 </div>
 
                 <!--
@@ -298,7 +298,7 @@
                 <?php
 //$notify = $product_model->get_notify_postcode();
 //foreach ($notify as $datas):
-                ?>
+?>
                             <a class="list-group-item">
                                 <span class="glyphicon glyphicon-user"></span> คุณ <?php //echo $datas['name'] . ' ' . $datas['lname'];                                             ?><br/>
                                 <span class="glyphicon glyphicon-send"></span>  <?php //echo $datas['postcode']                                             ?>
@@ -318,20 +318,20 @@
 
                     <?php if (isset($this->breadcrumbs)): ?>
                         <?php
-                        $this->widget('zii.widgets.CBreadcrumbs', array(
-                            'homeLink' => CHtml::link('<i class=" glyphicon glyphicon-home"></i> Home', Yii::app()->createUrl('backend/backend')),
-                            'links' => $this->breadcrumbs,
-                        ));
-                        ?><!-- breadcrumbs -->
-                    <?php endif ?>
+$this->widget('zii.widgets.CBreadcrumbs', array(
+	'homeLink' => CHtml::link('<i class=" glyphicon glyphicon-home"></i> Home', Yii::app()->createUrl('backend/backend')),
+	'links' => $this->breadcrumbs,
+));
+?><!-- breadcrumbs -->
+                    <?php endif?>
                 </ol>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
 
                             <?php
-                            echo $content;
-                            ?>
+echo $content;
+?>
                         </div>
                     </div>
                 </div>

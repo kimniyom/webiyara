@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <?php
-        $web = new Configweb_model();
-        $Background = $web->GetBackground();
-        $Option = $web->GetBackgroundOption();
-        if ($Option == 1) {
-            $style = "background-repeat: no-repeat;background-attachment: fixed;";
-        } else if ($Option == 2) {
-            $style = "height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;";
-        } else {
-            $style = "";
-        }
-        ?>
+$web = new Configweb_model();
+$Background = $web->GetBackground();
+$Option = $web->GetBackgroundOption();
+if ($Option == 1) {
+	$style = "background-repeat: no-repeat;background-attachment: fixed;";
+} else if ($Option == 2) {
+	$style = "height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;";
+} else {
+	$style = "";
+}
+?>
         <title>IYARA,iyara,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/uploads/logo/logo.png">
@@ -32,8 +32,8 @@
         <meta name="description" content="<?php echo Yii::app()->session['description']; ?>" />
         <meta name="keywords" content="iyara,IYARA,ไอยารา,เครื่องเสียง,หูฟัง,ลำโพง,sound,music,home,audio,studio,หูฟัง" />
 
-        <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="<?= Yii::app()->baseUrl; ?>/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?=Yii::app()->baseUrl;?>/css/footer.css" />
         <style>
             body {
                 overflow-x: hidden;
@@ -140,27 +140,32 @@
                 <?php echo $style ?>
             }
 
+
+            #header-navs{
+                background: url('<?php echo Yii::app()->baseUrl ?>/images/black-glass-boxtext.png');
+                background: #0f0f0f;
+            }
         </style>
         <?php
-        $productModel = new Product();
+$productModel = new Product();
 
-        $articleModel = new Article();
-        $NewsBlog = $articleModel->Get_article_limit(3);
-        $articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
+$articleModel = new Article();
+$NewsBlog = $articleModel->Get_article_limit(3);
+$articleCategory = Articlecategory::model()->findAll("active=:active", array(":active" => "1"));
 
-        $ContactModel = new Contact();
-        $Contact = $ContactModel->gat_contact();
-        $logoMini = "<img src='" . Yii::app()->baseUrl . "/images/logo.png' class='img-responsive' alt='Image'>";
-        $iconsloader = "<img src='" . Yii::app()->baseUrl . "/images/icons/spin.svg' />";
+$ContactModel = new Contact();
+$Contact = $ContactModel->gat_contact();
+$logoMini = "<img src='" . Yii::app()->baseUrl . "/images/logo.png' class='img-responsive' alt='Image'>";
+$iconsloader = "<img src='" . Yii::app()->baseUrl . "/images/icons/spin.svg' />";
 
-        $contactSocail = $ContactModel->get_social_media();
-        ?>
+$contactSocail = $ContactModel->get_social_media();
+?>
     </head>
     <body class="animsition animsition" id="<?php echo ($Background['id'] == 1) ? 'body' : 'bodyImg'; ?>">
         <input value="<?php echo $logoMini ?>" id="logomini" type="hidden" />
         <?php
-        $Categorys = Category::model()->findAll();
-        ?>
+$Categorys = Category::model()->findAll();
+?>
         <div class="home-1" id="page" style="margin-bottom:0px;">
             <!-- Menu Nav -->
             <div id="kkmenusidebar">
@@ -172,12 +177,12 @@
                     <li><a class="active" href="<?php echo Yii::app()->createUrl('frontend/product') ?>" >PRODUCT</a>
                         <ul>
                             <?php
-                            foreach ($Categorys as $rsCategory):
-                                ?>
+foreach ($Categorys as $rsCategory):
+?>
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array('id' => $rsCategory['id'])) ?>"><?php echo $rsCategory['categoryname'] ?></a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </ul>
                     </li>
                     <li><a href="<?php echo Yii::app()->createUrl('site/story') ?>" >STORY</a>
@@ -189,7 +194,7 @@
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/article/index', array('category' => $articleCategorys['id'])) ?>"><?php echo $articleCategorys['category'] ?></a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </ul>
                     </li>
                     <!--
@@ -201,7 +206,7 @@
             </nav>
 
             <!-- -->
-            <header class="header-style-2 nav" id="header-nav" style="background:#0f0f0f;border-bottom: #cccccc solid 0px; padding: 10px;"><!-- /images/bgheader.png -->
+            <header class="header-style-2 nav" id="header-navs" style="border-bottom: #cccccc solid 0px; padding: 10px;"><!-- /images/bgheader.png -->
                 <div class="container" id="menuBar">
                     <div class="row">
                         <div class="header-1-inner">
@@ -221,17 +226,17 @@
                                                 <li id="lisubmenu">
                                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array('id' => $rsCategory['id'])) ?>"><?php echo $rsCategory['categoryname'] ?></a>
                                                 </li>
-                                            <?php endforeach; ?>
+                                            <?php endforeach;?>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="<?= Yii::app()->createUrl('frontend/article/index') ?>">Blog</a>
+                                        <a href="<?=Yii::app()->createUrl('frontend/article/index')?>">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="<?= Yii::app()->createUrl('site/story') ?>">Story</a>
+                                        <a href="<?=Yii::app()->createUrl('site/story')?>">Story</a>
                                     </li>
                                     <li>
-                                        <a href="<?= Yii::app()->createUrl('site/findstore') ?>">Find Store</a>
+                                        <a href="<?=Yii::app()->createUrl('site/findstore')?>">Find Store</a>
                                     </li>
                                     <!--
                                     <li>
@@ -240,12 +245,14 @@
                                     -->
                                 </ul>
                             </nav>
+
                             <aside class="right">
+                                <!--
                                 <div class="widget widget-control-header widget-search-header">
                                     <a class="control btn-open-search-form js-open-search-form-header" style="cursor: pointer;" onclick="searchproduct()">
                                         <span class="lnr lnr-magnifier" style="color:#e0cd8b;"> <font style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 16px;">Search</font></span>
                                     </a>
-                                    <div class="form-outer" style=" background: url('<?php echo Yii::app()->baseUrl ?>/images/black-glass.png'); ">
+                                    <div class="form-outer" style=" background: url('<?php //echo Yii::app()->baseUrl ?>/images/black-glass.png'); ">
                                         <button class="btn-close-form-search-header js-close-search-form-header">
                                             <span class="lnr lnr-cross"></span>
                                         </button>
@@ -257,6 +264,7 @@
                                         </form>
                                     </div>
                                 </div>
+    -->
 
                                 <div class="widget widget-control-header hidden-lg hidden-md hidden-sm">
                                     <a class="navbar-toggle js-offcanvas-has-events" type="button" href="#menu">
@@ -266,11 +274,15 @@
                                     </a>
                                 </div>
                             </aside>
+
                         </div>
                     </div>
                 </div>
 
             </header>
+
+
+
 
             <div id="box-video-title" style="text-align: center;">
                 <i class="fa fa-angle-double-down fa-5x text-warning" id="icon-move" style="display: none;"></i>
@@ -280,14 +292,14 @@
                 <div class="font-THK" style="padding: 10px; color: #ffffff; background: none;border-bottom: #cccccc solid 0px; text-align: center; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; z-index:1;">
                     <div class="container">
                         <?php
-                        $this->widget('zii.widgets.CBreadcrumbs', array(
-                            'homeLink' => '<i class="fa fa-home"></i> ' . CHtml::link('home', Yii::app()->createUrl('site/index')),
-                            'links' => $this->breadcrumbs,
-                        ));
-                        ?><!-- breadcrumbs -->
+$this->widget('zii.widgets.CBreadcrumbs', array(
+	'homeLink' => '<i class="fa fa-home"></i> ' . CHtml::link('home', Yii::app()->createUrl('site/index')),
+	'links' => $this->breadcrumbs,
+));
+?><!-- breadcrumbs -->
                     </div>
                 </div>
-            <?php endif ?>
+            <?php endif?>
 
             <?php echo $content; ?>
         </div>
@@ -319,7 +331,7 @@
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/product/category', array("id" => $Category['id'])) ?> "><?php echo $Category['categoryname'] ?></a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -332,7 +344,7 @@
                                 <li>
                                     <a href="<?php echo Yii::app()->createUrl('frontend/article/index', array('category' => $articleCategorys['id'])) ?> "><?php echo $articleCategorys['category'] ?></a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -351,7 +363,7 @@
                 <div class="social-links">
                     <?php foreach ($contactSocail as $rsSocail): ?>
                         <a href="<?php echo $rsSocail['account'] ?>" target="_bank"><i class="<?php echo $rsSocail['fronticon'] ?>"></i></a>
-                    <?php endforeach; ?>
+                    <?php endforeach;?>
 
                     <p class="pull-right"><a href="<?php echo Yii::app()->createUrl('backend/backend') ?> " target="_blank">Administrator</a></p>
                 </div> <!-- End row -->
@@ -360,39 +372,43 @@
 
 
         </footer>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/bootstrap.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/jquery.mmenu.all.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/library/animsition.min.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/global.js"></script>
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/js/config-mm-menu.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/jquery.min.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/bootstrap.min.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/jquery.mmenu.all.min.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/library/animsition.min.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/global.js"></script>
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/js/config-mm-menu.js"></script>
         <!-- Jquery.Bxslide-->
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.css" media="screen">
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/jquery.bxslider/jquery.bxslider.js"></script>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/jquery.bxslider/jquery.bxslider.css" media="screen">
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/jquery.bxslider/jquery.bxslider.js"></script>
 
         <!-- fancybox -->
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.css" media="screen">
-        <script src="<?= Yii::app()->baseUrl; ?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.js"></script>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.css" media="screen">
+        <script src="<?=Yii::app()->baseUrl;?>/themes/kstudio/fancyBox2.1.5/source/jquery.fancybox.js"></script>
 
         <!-- images hover effect -->
-        <link href="<?= Yii::app()->baseUrl; ?>/themes/kstudio/css/images-hover-effect.css" rel="stylesheet" type="text/css" />
+        <link href="<?=Yii::app()->baseUrl;?>/themes/kstudio/css/images-hover-effect.css" rel="stylesheet" type="text/css" />
 
         <!-- Gallery -->
-        <link rel="stylesheet" href="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
-        <script type="text/javascript" charset="utf-8"src="<?= Yii::app()->baseUrl; ?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
+        <link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/magnific-popup.css" type="text/css" media="all" />
+        <script type="text/javascript" charset="utf-8"src="<?=Yii::app()->baseUrl;?>/assets/gallery_img/dist/jquery.magnific-popup.js"></script>
 
         <script tyle="text/javascript">
                             setScreen();
                             $(window).scroll(function() {
-                                if ($(this).scrollTop()) {
-                                    $("#header-nav").addClass("nav navbar-fixed-top");
+                                if ($(this).scrollTop() > 100) {
+                                    $("#header-navs").addClass("nav navbar-fixed-top");
+                                    $("#header-navs").css({"background": "#000000"});
                                     $("#icon-move").hide();
                                 } else {
-                                    $("#header-nav").removeClass("nav navbar-fixed-top");
+                                    $("#header-navs").addClass("nav navbar-fixed-top");
+                                    $("#header-navs").css({'background': 'url(<?php echo Yii::app()->baseUrl ?>/images/black-glass-boxtext.png)'});
                                 }
                             });
                             //getMenu();
                             function setScreen() {
+                                $("#header-navs").addClass("nav navbar-fixed-top");
+                                    $("#header-navs").css({'background': 'url(<?php echo Yii::app()->baseUrl ?>/images/black-glass-boxtext.png)'});
                                 var w = window.innerWidth;
                                 if (w >= 768) {
 

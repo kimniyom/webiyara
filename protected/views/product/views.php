@@ -103,6 +103,22 @@
             font-size: 22px;
             color:#FFFFFF;
         }
+
+        .spect .headspect{
+            font-size: 48px;
+            color: #ffffff;
+        }
+
+        .spect table tbody tr td p{
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        .spect table tbody tr td p b{
+            font-size: 20px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
     }
 
     @media only screen and (max-width: 992px) {
@@ -115,6 +131,22 @@
         .main-content .box-title .text-description{
             font-size: 20px;
             color:#FFFFFF;
+        }
+
+        .spect .headspect{
+            font-size: 26px;
+            color: #ffffff;
+        }
+
+        .spect table tbody tr td p{
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        .spect table tbody tr td p b{
+            font-size: 18px;
+            color: #FFFFFF;
+            font-weight: bold;
         }
     }
 
@@ -134,6 +166,21 @@
             background: #000000;
             background: url("<?php echo Yii::app()->baseUrl . "/images/bg-product-mobile.jpg"; ?>");
         }
+
+        .spect .headspect{
+            font-size: 32px;
+            color: #ffffff;
+        }
+
+        .spect table tbody tr td p{
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+
+        .spect table tbody tr td p b{
+            font-size: 16px;
+            color: #FFFFFF;
+
     }
 
 
@@ -152,6 +199,15 @@
         #body{
             background: #000000;
             background: url("<?php echo Yii::app()->baseUrl . "/images/bg-product-mobile.jpg"; ?>");
+        }
+
+        .spect .headspect{
+            font-size: 24px;
+        }
+
+         .spect table tbody tr td p{
+            font-size: 18px;
+            color: #FFFFFF;
         }
     }
 
@@ -228,23 +284,23 @@ foreach ($layout as $rs):
 		$revers = "0";
 	}
 	?>
-	        <style type="text/css">
-	                    @media (min-width:992px){
-	                .row {
-	      display: -webkit-box;
-	      display: -webkit-flex;
-	      display: -ms-flexbox;
-	      display:         flex;
-	    }
-	    .row > [class*='col-'] {
-	         display: flex;
-	         flex-direction: column;
-	    }
-	            }
-	        </style>
-	        <div class="<?php //echo $class                                                                                                                                ?>">
-	            <div class="row" style="margin: 0px;">
-	                <?php
+																									        <style type="text/css">
+																									                    @media (min-width:992px){
+																									                .row {
+																									      display: -webkit-box;
+																									      display: -webkit-flex;
+																									      display: -ms-flexbox;
+																									      display:         flex;
+																									    }
+																									    .row > [class*='col-'] {
+																									         display: flex;
+																									         flex-direction: column;
+																									    }
+																									            }
+																									        </style>
+																									        <div class="<?php //echo $class                                                                                                                                ?>">
+																									            <div class="row" style="margin: 0px;">
+																									                <?php
 	if ($revers == 1) {
 		$reversClassLeft = " col-md-push-6";
 		$reversClassRight = " col-md-pull-6";
@@ -260,63 +316,71 @@ foreach ($layout as $rs):
 		$classRevers = $reversClassRight;
 	}
 	?>
-	                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
+																									                    <div style="padding:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
 
-	                        <!--
-	                            #### ถ้ามีรูปภาพ ####
-	                        -->
-	                        <div data-aos="fade-up" data-aos-duration="1000">
-	                            <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
-	                        </div>
-	                        <?php if ($contentLayout['images']) {?>
-	                            <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-	                                <div style="position: absolute; width: 100%; height: 100%;">
-	                                    <div class="vertical-center" data-aos="fade-down" data-aos-duration="1000">
-	                                        <div><?php echo $contentLayout['content'] ?>
-	                                            <?php if ($contentLayout['link']) {?>
-	                                                <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
-	                                                    <button type="button" class="btn-links">
-	                                                        <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-	                                                    </button>
-	                                                </a>
-	                                            <?php }?>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            <?php }?>
+																									                        <!--
+																									                            #### ถ้ามีรูปภาพ ####
+																									                        -->
+																									                        <div data-aos="fade-up" data-aos-duration="1000">
+																									                            <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+																									                        </div>
+																									                        <?php if ($contentLayout['images']) {?>
+																									                            <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
+																									                                <div style="position: absolute; width: 100%; height: 100%;">
+																									                                    <div class="vertical-center" data-aos="fade-down" data-aos-duration="1000">
+																									                                        <div><?php echo $contentLayout['content'] ?>
+																									                                            <?php if ($contentLayout['link']) {?>
+																									                                                <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
+																									                                                    <button type="button" class="btn-links">
+																									                                                        <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+																									                                                    </button>
+																									                                                </a>
+																									                                            <?php }?>
+																									                                        </div>
+																									                                    </div>
+																									                                </div>
+																									                            <?php }?>
 
-	                        <?php } else {?>
-	                            <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-	                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
-	                                    <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
-	                                        <div>
-	                                            <?php echo $contentLayout['content'] ?>
-	                                            <?php if ($contentLayout['link']) {?>
-	                                                <center>
-	                                                    <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
-	                                                        <button type="button" class="btn-links">
-	                                                            <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-	                                                        </button>
-	                                                    </a>
-	                                                </center>
-	                                            <?php }?>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            <?php } else {?>
-	                                <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
-	                                    <div class="box-center" style=" border: #004b63 dashed 2px;">
-	                                        <div style="font-family: Th;">No Data</div>
-	                                    </div>
-	                                </div>
-	                            <?php }?>
-	                        <?php }?>
-	                    </div>
-	                <?php endfor;?>
+																									                        <?php } else {?>
+																									                            <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
+																									                                <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
+																									                                    <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
+																									                                        <div>
+																									                                            <?php echo $contentLayout['content'] ?>
+																									                                            <?php if ($contentLayout['link']) {?>
+																									                                                <center>
+																									                                                    <a href="<?php echo $contentLayout['link'] ?>"  target="_bank">
+																									                                                        <button type="button" class="btn-links">
+																									                                                            <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+																									                                                        </button>
+																									                                                    </a>
+																									                                                </center>
+																									                                            <?php }?>
+																									                                        </div>
+																									                                    </div>
+																									                                </div>
+																									                            <?php } else {?>
+																									                                <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+																									                                    <div class="box-center" style=" border: #004b63 dashed 2px;">
+																									                                        <div style="font-family: Th;">No Data</div>
+																									                                    </div>
+																									                                </div>
+																									                            <?php }?>
+																									                        <?php }?>
+																									                    </div>
+																									                <?php endfor;?>
             </div>
         </div>
     <?php endforeach;?>
 </div>
+<div class="container" style="padding: 50px;">
+    <div class="spect">
+        <div class="headspect">Specifiaction</div>
+        <hr/>
+        <?php echo $product['spect'] ?>
+    </div>
+</div>
+
 <script src="<?=Yii::app()->baseUrl;?>/themes/iyara/dist/aos.js"></script>
 <script>
     AOS.init({
