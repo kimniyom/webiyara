@@ -6386,3 +6386,295 @@ REQUEST_URI=/webiyara/backend/product/update/product_id/P20191028151345
 in /Applications/MAMP/htdocs/webiyara/protected/views/backend/product/update.php (66)
 in /Applications/MAMP/htdocs/webiyara/protected/controllers/backend/ProductController.php (121)
 in /Applications/MAMP/htdocs/webiyara/index.php (14)
+2019/12/25 21:52:51 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+                    p.product_price_pro,
+                    product_name,
+                    product_num,
+                    product_detail,
+                    description,
+                    product_price,d_update,
+                    p.status,
+                    t.type_id,
+                    type_name,
+                    p.category,
+                    p.brand,
+                    c.categoryname,
+                    recommend,
+                    bastseller,
+                    optionproduct,
+                    p.spect
+                FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+                INNER JOIN category c ON p.category = c.id
+                WHERE p.product_id = 'P20191028151345'.
+in C:\xampp\htdocs\webiyara\protected\models\Backend_product.php (87)
+in C:\xampp\htdocs\webiyara\protected\controllers\backend\ProductController.php (115)
+in C:\xampp\htdocs\webiyara\index.php (14)
+2019/12/25 21:52:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+                    p.product_price_pro,
+                    product_name,
+                    product_num,
+                    product_detail,
+                    description,
+                    product_price,d_update,
+                    p.status,
+                    t.type_id,
+                    type_name,
+                    p.category,
+                    p.brand,
+                    c.categoryname,
+                    recommend,
+                    bastseller,
+                    optionproduct,
+                    p.spect
+                FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+                INNER JOIN category c ON p.category = c.id
+                WHERE p.product_id = 'P20191028151345' in C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\webiyara\protected\models\Backend_product.php(87): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\webiyara\protected\controllers\backend\ProductController.php(115): Backend_Product->_get_detail_product('P20191028151345')
+#3 [internal function]: ProductController->actionUpdate('P20191028151345')
+#4 C:\xampp\htdocs\webiyara\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#5 C:\xampp\htdocs\webiyara\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\webiyara\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webiyara\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\webiyara\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('update')
+#10 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('backend/product...')
+#11 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/webiyara/backend/product/update/product_id/P20191028151345
+HTTP_REFERER=http://localhost/webiyara/backend/product/getproduct/category/1/type/004
+---
+2019/12/25 21:54:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/test
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/12/25 21:54:31 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+        product_name,
+        product_num,
+        product_detail,
+        product_price,
+        product_price_pro,
+        description,
+        d_update,
+        p.status,
+        t.type_id,
+        type_name,
+        c.categoryname,
+        p.category,
+        p.countread,
+        p.optionproduct,
+        p.spect
+        FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+        INNER JOIN category c ON p.category = c.id
+        WHERE p.product_id = 'P20191028151345' .
+in C:\xampp\htdocs\webiyara\protected\models\Product.php (102)
+in C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php (78)
+in C:\xampp\htdocs\webiyara\index.php (14)
+2019/12/25 21:54:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+        product_name,
+        product_num,
+        product_detail,
+        product_price,
+        product_price_pro,
+        description,
+        d_update,
+        p.status,
+        t.type_id,
+        type_name,
+        c.categoryname,
+        p.category,
+        p.countread,
+        p.optionproduct,
+        p.spect
+        FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+        INNER JOIN category c ON p.category = c.id
+        WHERE p.product_id = 'P20191028151345'  in C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\webiyara\protected\models\Product.php(102): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php(78): Product->_get_detail_product('P20191028151345')
+#3 [internal function]: ProductController->actionViews('P20191028151345')
+#4 C:\xampp\htdocs\webiyara\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#5 C:\xampp\htdocs\webiyara\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\webiyara\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webiyara\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\webiyara\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('views')
+#10 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('frontend/produc...')
+#11 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/webiyara/frontend/product/views/id/P20191028151345
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/12/25 21:56:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/logo/kmlogo.png". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/logo/km...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/logo/kmlogo.png
+HTTP_REFERER=http://localhost/webiyara/backend/logo
+---
+2019/12/25 21:56:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/logo/kmlogo.png". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/logo/km...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/logo/kmlogo.png
+HTTP_REFERER=http://localhost/webiyara/backend/logo
+---
+2019/12/25 21:56:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+        product_name,
+        product_num,
+        product_detail,
+        product_price,
+        product_price_pro,
+        description,
+        d_update,
+        p.status,
+        t.type_id,
+        type_name,
+        c.categoryname,
+        p.category,
+        p.countread,
+        p.optionproduct,
+        p.spect
+        FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+        INNER JOIN category c ON p.category = c.id
+        WHERE p.product_id = 'P20191028151345' .
+in C:\xampp\htdocs\webiyara\protected\models\Product.php (102)
+in C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php (78)
+in C:\xampp\htdocs\webiyara\index.php (14)
+2019/12/25 21:56:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.spect' in 'field list'. The SQL statement executed was: SELECT p.product_id,
+        product_name,
+        product_num,
+        product_detail,
+        product_price,
+        product_price_pro,
+        description,
+        d_update,
+        p.status,
+        t.type_id,
+        type_name,
+        c.categoryname,
+        p.category,
+        p.countread,
+        p.optionproduct,
+        p.spect
+        FROM product p INNER JOIN product_type t ON p.type_id = t.type_id
+        INNER JOIN category c ON p.category = c.id
+        WHERE p.product_id = 'P20191028151345'  in C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\webiyara\protected\models\Product.php(102): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php(78): Product->_get_detail_product('P20191028151345')
+#3 [internal function]: ProductController->actionViews('P20191028151345')
+#4 C:\xampp\htdocs\webiyara\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#5 C:\xampp\htdocs\webiyara\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\webiyara\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webiyara\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\webiyara\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('views')
+#10 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('frontend/produc...')
+#11 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/webiyara/frontend/product/views/id/P20191028151345
+HTTP_REFERER=http://localhost/webiyara/frontend/product/category/id/1
+---
+2019/12/25 21:59:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "test". in C:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/test
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/12/26 01:26:36 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "qwq". in C:\xampp\htdocs\webiyara\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(270): CController->missingAction('qwq')
+#1 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): CController->run('qwq')
+#2 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('site/qwq')
+#3 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/site/qwq
+HTTP_REFERER=http://localhost/webiyara/site/index
+---
+2019/12/26 01:33:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/product...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/12/26 01:33:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/product...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/12/26 01:33:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/product...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/12/26 01:33:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/product...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/12/26 01:33:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg". in C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/product...')
+#1 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\webiyara\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/uploads/product/img_y2totb5clk7ujg48e78fa7i2dpzv3j.jpg
+HTTP_REFERER=http://localhost/webiyara/backend/product/update/product_id/P20191028151345
+---
+2019/12/26 02:13:24 [error] [php] Use of undefined constant e - assumed 'e' (this will throw an Error in a future version of PHP) (C:\xampp\htdocs\webiyara\protected\views\product\index.php:240)
+Stack trace:
+#0 C:\xampp\htdocs\webiyara\framework\web\CController.php(869): ProductController->renderFile()
+#1 C:\xampp\htdocs\webiyara\framework\web\CController.php(782): ProductController->renderPartial()
+#2 C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php(14): ProductController->render()
+#3 C:\xampp\htdocs\webiyara\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#4 C:\xampp\htdocs\webiyara\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\webiyara\framework\web\CController.php(286): ProductController->runAction()
+#6 C:\xampp\htdocs\webiyara\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\xampp\htdocs\webiyara\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\webiyara\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\webiyara\index.php(14): CWebApplication->run()
+REQUEST_URI=/webiyara/frontend/product
+in C:\xampp\htdocs\webiyara\protected\views\product\index.php (240)
+in C:\xampp\htdocs\webiyara\protected\controllers\frontend\ProductController.php (14)
+in C:\xampp\htdocs\webiyara\index.php (14)

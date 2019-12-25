@@ -13,7 +13,7 @@
 <?php
 $productModel = new Product();
 ?>
-<div class="row">
+
 <?php
 foreach ($product as $rsProduct):
     $img_title = $productModel->firstpictures($rsProduct['product_id']);
@@ -26,27 +26,26 @@ foreach ($product as $rsProduct):
     <!--
     box-shadow: #999999 3px 3px 10px 0px;
     -->
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hover01">
-    <figure style=" margin-bottom: 35px;"> <!-- class="item" -->
-        
-        <div class="product product-style-3" style=" background: #000000;  border-radius: 5px 5px 5px 5px;">
-            <div class="img-wrapper" style="border:none;">
-                <a href="<?php echo Yii::app()->createUrl('frontend/product/views', array("id" => $rsProduct['product_id'])) ?>">
-                    <img class="img-responsive" src="<?php echo Yii::app()->baseUrl; ?>/<?php echo $img ?>" alt="product thumbnail" style="border-radius: 4px 4px 0px 0px;"/>
-                </a>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hover10">
+        <figure style=" margin-bottom: 35px;"> <!-- class="item" -->
 
+            <div class="product product-style-3" style=" background: #000000;  border-radius: 5px 5px 5px 5px;">
+                <div class="img-wrapper" style="border:none;">
+                    <a href="<?php echo Yii::app()->createUrl('frontend/product/views', array("id" => $rsProduct['product_id'])) ?>">
+                        <img class="img-responsive" src="<?php echo Yii::app()->baseUrl; ?>/<?php echo $img ?>" alt="product thumbnail" style="border-radius: 4px 4px 0px 0px;"/>
+                    </a>
+                </div>
+                <figcaption class="desc">
+                    <h4 class="font-supermarket" style=" height: 50px; overflow: hidden;">
+                        <a class="product-name" style="color:#e0cd8b;" href="<?php echo Yii::app()->createUrl('frontend/product/views', array("id" => $rsProduct['product_id'])) ?>"><?php echo $rsProduct['product_name'] ?></a>
+                    </h4>
+                </figcaption>
             </div>
-            <figcaption class="desc">
-                <h4 class="font-supermarket" style=" height: 50px; overflow: hidden;">
-                    <a class="product-name" style="color:#e0cd8b;" href="<?php echo Yii::app()->createUrl('frontend/product/views', array("id" => $rsProduct['product_id'])) ?>"><?php echo $rsProduct['product_name'] ?></a>
-                </h4>
-            </figcaption>
-        </div>
-    
-    </figure>
+
+        </figure>
     </div>
 <?php endforeach; ?>
-</div>
+
 
 
 

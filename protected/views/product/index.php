@@ -214,16 +214,17 @@
 </div>
 
 <div class="container" style=" padding-top: 30px;">
+    <!--
     <div class="row" id="btn-filter">
         <div class="col-lg-3 col-md-3">
-            <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary btn-block" onclick="popupfilter()" style="margin-bottom:20px; background:#e0cd8b; border:none;">
                 <i class="fa fa-search"></i> FILTER
             </button>
         </div>
     </div>
-
+    -->
     <div class="row" style=" margin: 0px;">
+        <!--
         <div class="col-lg-3 col-md-3" id="filter">
             <div id="box-footer">
 
@@ -233,28 +234,29 @@
                 </div>
 
                 <ul class="list-group" id="category" style=" border: none; background: none;">
-                    <?php foreach ($categorys as $category): ?>
+        <?php //foreach ($categorys as $category): ?>
                         <li class="list-group-item" style="padding:0px; background:none; border: none;">
                             <div class="inputGroup">
-                                <input id="checkbox-example-<?php echo $category['id'] ?>" type="checkbox" name="options[]" value="<?php echo $category['id'] ?>" checked="checked" onclick="Getpage()"/>
-                                <label for="checkbox-example-<?php echo $category['id'] ?>"><?php echo $category['categoryname'] ?></label>
+                                <input id="checkbox-example-<?php //echo $category['id']      ?>" type="checkbox" name="options[]" value="<?php //cho $category['id']      ?>" checked="checked" onclick="Getpage()"/>
+                                <label for="checkbox-example-<?php //echo $category['id']      ?>"><?php //echo $category['categoryname']      ?></label>
                             </div>
                         </li>
-                    <?php endforeach; ?>
+        <?php //endforeach; ?>
                 </ul>
                 <input type="hidden" id="categoryfilter" />
 
 
             </div>
         </div>
-        <div class="col-lg-9 col-md-9" style="padding:0px;">
+        -->
+        <div class="col-lg-12 col-md-12" style="padding:0px;">
             <div id="defaultpage"></div>
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
-    category();
+    //category();
     Getpage();
     function category() {
         var arr = $.map($('#category input:checkbox:checked'), function(e, i) {

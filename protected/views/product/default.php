@@ -14,19 +14,22 @@
     });
 </script>
 <div class="panel panel-primary" style=" border: none; background: none; box-shadow: none;">
+    <!--
     <div class="panel-heading" style=" background: #0f0f0f; border-bottom: none; border-radius: 3px;">
         <h4 class="font-supermarket" style="color: #e0cd8b; font-size: 20px;">total <?php echo $count ?> items</h4>
     </div>
-    <div class="row product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row" id="results" style=" margin-top: 20px;"></div>
-
-    <div align="center">
-        <button class="load_more btn btn-default" id="load_more_button" style=" background:none; border-color:#e0cd8b;  color:#e0cd8b">
-            LOAD MORE <i class="fa fa-angle-down"></i>
-        </button>
-        <div class="animation_image" style="display:none;">
-            <i class="fa fa-spinner fa-spin fa-3x fa-fw text-warning"></i> Loading...
-        </div>
-    </div><br/>
+    -->
+    <div class="row product-grid-equal-height-wrapper product-equal-height-4-columns flex multi-row" id="results" style=" margin-top: 100px;"></div>
+    <!--
+        <div align="center">
+            <button class="load_more btn btn-default" id="load_more_button" style=" background:none; border-color:#e0cd8b;  color:#e0cd8b">
+                LOAD MORE <i class="fa fa-angle-down"></i>
+            </button>
+            <div class="animation_image" style="display:none;">
+                <i class="fa fa-spinner fa-spin fa-3x fa-fw text-warning"></i> Loading...
+            </div>
+        </div><br/>
+    -->
 </div>
 
 <script type="text/javascript">
