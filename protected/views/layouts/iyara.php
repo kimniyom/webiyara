@@ -201,7 +201,7 @@
                     </li>
                     <!--
                     <li>
-                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                                                                                        ?>">CONTACT</a>
+                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                                                                                            ?>">CONTACT</a>
                     </li>
                     -->
                 </ul>
@@ -242,7 +242,7 @@
                                     </li>
                                     <!--
                                     <li>
-                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                                                                                        ?>">Contact</a>
+                                        <a href="<?php //Yii::app()->createUrl('contactuser/create')                                                                                            ?>">Contact</a>
                                     </li>
                                     -->
                                 </ul>
@@ -254,7 +254,7 @@
                                     <a class="control btn-open-search-form js-open-search-form-header" style="cursor: pointer;" onclick="searchproduct()">
                                         <span class="lnr lnr-magnifier" style="color:#e0cd8b;"> <font style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 16px;">Search</font></span>
                                     </a>
-                                    <div class="form-outer" style=" background: url('<?php //echo Yii::app()->baseUrl                                                             ?>/images/black-glass.png'); ">
+                                    <div class="form-outer" style=" background: url('<?php //echo Yii::app()->baseUrl                                                                 ?>/images/black-glass.png'); ">
                                         <button class="btn-close-form-search-header js-close-search-form-header">
                                             <span class="lnr lnr-cross"></span>
                                         </button>
@@ -289,7 +289,7 @@
 
             <?php if ($this->breadcrumbs): ?>
                 <div class="font-THK" style="padding: 10px; color: #ffffff; background: none;border-bottom: #cccccc solid 0px; text-align: center; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; z-index:1;">
-                    <div class="container">
+                    <div class="container" style=" padding-top: 80px;">
                         <?php
                         $this->widget('zii.widgets.CBreadcrumbs', array(
                             'homeLink' => '<i class="fa fa-home"></i> ' . CHtml::link('home', Yii::app()->createUrl('site/index')),

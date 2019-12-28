@@ -189,6 +189,7 @@
                 font-size: 30px;
                 color:#FFFFFF;
                 margin-bottom:20px;
+                margin-top:80px;
             }
 
             .main-content .box-title .text-description{
