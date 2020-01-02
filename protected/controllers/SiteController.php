@@ -219,6 +219,10 @@ class SiteController extends Controller {
 		$this->renderPartial("video");
 	}
 
+	public function actionVideosafari() {
+		$this->renderPartial("videosafari");
+	}
+
 	public function actionVideomobile() {
 		$this->renderPartial("videomobile");
 	}

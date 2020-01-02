@@ -151,10 +151,12 @@
     </head>
 
     <body>
+        <!--
         <span class="fa-stack fa-lg sound" style=" position: absolute; bottom: 10px; right: 10px; z-index: 100;">
             <i class="fa fa-circle-o fa-stack-2x"></i>
             <i class="fa fa-volume-off fa-stack-1x volume-icon"></i>
         </span>
+    -->
         <div class="popup">
             <div class="over-ray">
                 <div style="width: 400px; height: 200px; background: #ffffff;">
@@ -164,9 +166,15 @@
                 </div>
             </div>
         </div>
+
         <div class="video-background">
-            <div id="video-foreground" class="mute"></div>
+        <video autoplay muted loop style="width: 100%;">
+            <source src="<?php echo Yii::app()->baseUrl; ?>/uploads/video/Spot-IYARA-720P.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+            <!--<div id="video-foreground" class="mutes"></div>-->
         </div>
+
         <div  style="margin:0px;">
             <div class="col-md-12 main-content">
                 <div class="text-center">
@@ -192,27 +200,19 @@
             </div>
         </div>
 
-        <div class="modal" tabindex="-1" role="dialog" id="alert-home">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p style="color:#000000;">Allow unmute</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary sound" data-dismiss="modal">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script type="text/javascript">
+            var size = window.innerWidth;
+            if (size < 1024) {
+                window.location = "<?php echo Yii::app()->createUrl('site/index') ?>";
+            }
+
+            var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if(is_safari){
+                window.location = "<?php echo Yii::app()->createUrl('site/index') ?>";
+            }
+
+            /*
             var tag = document.createElement('script');
 
                         tag.src = "https://www.youtube.com/iframe_api";
@@ -221,7 +221,7 @@
 
                         var size = window.innerWidth;
                         if (size < 1024) {
-                            window.location = "<?php echo Yii::app()->createUrl('site/index') ?>";
+                            window.location = "<?php //echo Yii::app()->createUrl('site/index') ?>";
                         }
 
 
@@ -244,18 +244,12 @@
                                 },
                                 events: {
                                     'onReady': playVideo
-                                            /*
-                                             onReady: function(e) {
-                                             e.target.mute();
-                                             }
-                                             */
+
                                 }
                             });
                         }
-                        /* Sound Control
-                         * You can remove below if you don't want to show the icon. Video will be muted by default.
-                         */
 
+*/
                         function playVideo() {
                             $('#video-foreground').toggleClass('mute');
                             $('.volume-icon').toggleClass('fa-volume-up', 'fa-volume-off');
@@ -265,9 +259,8 @@
                                 player.unMute();
                             }
                         }
+                        /*
                         $(document).ready(function(e) {
-                            //$(".popup").show();
-                            //$("#alert-home").modal();
                             $('.sound').on('click', function() {
                                 $('#video-foreground').toggleClass('mute');
                                 $('.volume-icon').toggleClass('fa-volume-up', 'fa-volume-off');
@@ -278,7 +271,7 @@
                                 }
                             });
                         });
-
+                        */
                         function closePopup() {
                             $(".popup").hide();
                         }
