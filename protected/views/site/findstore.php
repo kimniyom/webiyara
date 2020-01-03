@@ -34,7 +34,7 @@
 //);
 ?>
 <div class="container">
-    <div style="text-align: center; font-size: 48px;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;color: #e0cd8b; margin-top: 50px;">
+    <div style="text-align: center; font-size: 48px;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;color: #e0cd8b; margin-top: 80px;">
         <i class="fa fa-building"></i><br/>
         <font style="border-bottom:#e0cd8b solid 2px;">Find Store</font>
     </div>

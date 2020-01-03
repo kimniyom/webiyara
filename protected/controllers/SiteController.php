@@ -204,8 +204,16 @@ class SiteController extends Controller {
 	}
 
 	public function actionStory() {
+		$BgModel = new Background();
 		$sql = "select * from about where id = '1'";
 		$data['data'] = Yii::app()->db->createCommand($sql)->queryRow();
+		$sqlBg = "select * from bgcontent where type = 's'";
+		$rs = Yii::app()->db->createCommand($sqlBg)->queryRow();
+		$data['lt'] = $BgModel->getBgName($rs['lefttop'])['background'];
+		$data['rt'] = $BgModel->getBgName($rs['righttop'])['background'];
+		$data['lb'] = $BgModel->getBgName($rs['leftbottom'])['background'];
+		$data['rb'] = $BgModel->getBgName($rs['rightbottom'])['background'];
+		$data['bg'] = $rs;
 		$this->render("story", $data);
 	}
 

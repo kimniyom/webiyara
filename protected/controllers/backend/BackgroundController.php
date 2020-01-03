@@ -88,4 +88,29 @@ class BackgroundController extends Controller {
 		$this->renderPartial('//backend/background/bg', $data);
 	}
 
+	public function actionSetbgstory() {
+		$p1 = Yii::app()->request->getPost('position');
+		$type = Yii::app()->request->getPost('type');
+		$bg = Yii::app()->request->getPost('background');
+		$sql = "select * from bgcontent where type = 's'";
+		$rs = Yii::app()->db->createCommand($sql)->queryRow();
+		$columns = array(
+			$p1 => $bg,
+		);
+		if (empty($rs['type'])) {
+			Yii::app()->db->createCommand()
+				->insert("bgcontent", array($p1 => $bg, 'type' => 's'));
+		} else {
+			Yii::app()->db->createCommand()
+				->update("bgcontent", $columns, "type = 's'");
+		}
+
+	}
+
+	public function actionDeletebg() {
+		$type = Yii::app()->request->getPost('type');
+		Yii::app()->db->createCommand()
+			->delete("bgcontent", "type = '$type'");
+	}
+
 }

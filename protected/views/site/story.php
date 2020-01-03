@@ -16,22 +16,22 @@
 
     .bg-left-top{
         position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:-10;
-        background: url('<?php echo Yii::app()->baseUrl ?>/images/l1.png') left top no-repeat;
+        background: url('<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $lt ?>') left top no-repeat;
     }
 
     .bg-right-top{
         position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:-10;
-        background: url('<?php echo Yii::app()->baseUrl ?>/images/r1.png') right top no-repeat;
+        background: url('<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $rt ?>') right top no-repeat;
     }
 
     .bg-left-bottom{
         position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:-10;
-        background: url('<?php echo Yii::app()->baseUrl ?>/images/l2.png') left bottom no-repeat;
+        background: url('<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $lb ?>') left bottom no-repeat;
     }
 
     .bg-right-bottom{
         position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:-10;
-        background: url('<?php echo Yii::app()->baseUrl ?>/images/r2.png') right bottom no-repeat;
+        background: url('<?php echo Yii::app()->baseUrl ?>/uploads/background/<?php echo $rb ?>') right bottom no-repeat;
     }
 
 </style>
@@ -42,7 +42,7 @@
 
 $this->pageTitle = Yii::app()->name;
 $this->breadcrumbs = array(
-    'Story',
+	'Story',
 );
 ?>
 

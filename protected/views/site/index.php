@@ -139,23 +139,23 @@ foreach ($layout as $rs):
 		$revers = "0";
 	}
 	?>
-					    <style type="text/css">
-					        @media (min-width:992px){
-					            .row {
-					  display: -webkit-box;
-					  display: -webkit-flex;
-					  display: -ms-flexbox;
-					  display:         flex;
-					}
-					.row > [class*='col-'] {
-					     display: flex;
-					     flex-direction: column;
-					}
-					        }
-					    </style>
-					    <div>
-					        <div class="row" style=" margin: 0px;">
-					            <?php
+						    <style type="text/css">
+						        @media (min-width:992px){
+						            .row {
+						  display: -webkit-box;
+						  display: -webkit-flex;
+						  display: -ms-flexbox;
+						  display:         flex;
+						}
+						.row > [class*='col-'] {
+						     display: flex;
+						     flex-direction: column;
+						}
+						        }
+						    </style>
+						    <div>
+						        <div class="row" style=" margin: 0px;">
+						            <?php
 	if ($revers == 1) {
 		$reversClassLeft = " col-md-push-6";
 		$reversClassRight = " col-md-pull-6";
@@ -171,58 +171,58 @@ foreach ($layout as $rs):
 		$classRevers = $reversClassRight;
 	}
 	?>
-					                <div style="padding:0px; margin:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
+						                <div style="padding:0px; margin:0px;" class="<?php echo $rs['classname']; ?> <?php echo $classRevers ?>">
 
-					                    <!--
-					                        #### ถ้ามีรูปภาพ ####
-					                    -->
-					                    <?php if ($contentLayout['images']) {?>
-					                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-					                            <div style="position: absolute; width: 100%; height: 100%; margin:0px;">
-					                                <div class="vertical-center" data-aos="fade-right" data-aos-duration="3000">
-					                                    <div><?php echo $contentLayout['content'] ?>
-					                                        <?php if ($contentLayout['link']) {?>
-					                                            <a href="<?php echo $contentLayout['link'] ?>">
-					                                                <button type="button" class="btn-links">
-					                                                    <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-					                                                </button>
-					                                            </a>
-					                                        <?php }?>
-					                                    </div>
-					                                </div>
-					                            </div>
-					                        <?php }?>
-					                        <div data-aos="fade-up" data-aos-duration="1000">
-					                            <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
-					                        </div>
-					                    <?php } else {?>
-					                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
-					                            <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
-					                                <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
-					                                    <div>
-					                                        <?php echo $contentLayout['content'] ?>
-					                                        <?php if ($contentLayout['link']) {?>
-					                                            <center>
-					                                                <a href="<?php echo $contentLayout['link'] ?>" >
-					                                                    <button type="button" class="btn-links">
-					                                                        <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
-					                                                    </button>
-					                                                </a>
-					                                            </center>
-					                                        <?php }?>
-					                                    </div>
-					                                </div>
-					                            </div>
-					                        <?php } else {?>
-					                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
-					                                <div class="box-center" style=" border: #004b63 dashed 2px;">
-					                                    <div style="font-family: Th;">No Data</div>
-					                                </div>
-					                            </div>
-					                        <?php }?>
-					                    <?php }?>
-					                </div>
-					            <?php endfor;?>
+						                    <!--
+						                        #### ถ้ามีรูปภาพ ####
+						                    -->
+						                    <?php if ($contentLayout['images']) {?>
+						                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
+						                            <div style="position: absolute; width: 100%; height: 100%; margin:0px; ">
+						                                <div class="vertical-center" data-aos="fade-right" data-aos-duration="3000">
+						                                    <div><?php echo $contentLayout['content'] ?>
+						                                        <?php if ($contentLayout['link']) {?>
+						                                            <a href="<?php echo $contentLayout['link'] ?>">
+						                                                <button type="button" class="btn-links">
+						                                                    <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+						                                                </button>
+						                                            </a>
+						                                        <?php }?>
+						                                    </div>
+						                                </div>
+						                            </div>
+						                        <?php }?>
+						                        <div data-aos="fade-up" data-aos-duration="1000">
+						                            <img src="<?=Yii::app()->baseUrl;?>/uploads/page/<?php echo $contentLayout['images'] ?>" alt="" class="img-responsive">
+						                        </div>
+						                    <?php } else {?>
+						                        <?php if ($contentLayout['content'] || $contentLayout['link']) {?>
+						                            <div class="<?php echo ($rowImages > 0) ? 'v-none-img' : '' ?>" data-aos="fade-left" data-aos-duration="1000">
+						                                <div class="<?php echo ($rowImages > 0) ? ' vertical-center-none-img' : '' ?>">
+						                                    <div>
+						                                        <?php echo $contentLayout['content'] ?>
+						                                        <?php if ($contentLayout['link']) {?>
+						                                            <center>
+						                                                <a href="<?php echo $contentLayout['link'] ?>" >
+						                                                    <button type="button" class="btn-links">
+						                                                        <?php echo $contentLayout['linktext'] ?> <i class="fa fa-angle-right"></i>
+						                                                    </button>
+						                                                </a>
+						                                            </center>
+						                                        <?php }?>
+						                                    </div>
+						                                </div>
+						                            </div>
+						                        <?php } else {?>
+						                            <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
+						                                <div class="box-center" style=" border: #004b63 dashed 2px;">
+						                                    <div style="font-family: Th;">No Data</div>
+						                                </div>
+						                            </div>
+						                        <?php }?>
+						                    <?php }?>
+						                </div>
+						            <?php endfor;?>
         </div>
     </div>
 <?php endforeach;?>

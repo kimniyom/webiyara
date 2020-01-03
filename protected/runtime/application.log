@@ -6775,3 +6775,56 @@ REQUEST_URI=/webiyara/backend/background/bg
 in /Applications/MAMP/htdocs/webiyara/protected/views/backend/background/bg.php (2)
 in /Applications/MAMP/htdocs/webiyara/protected/controllers/backend/BackgroundController.php (88)
 in /Applications/MAMP/htdocs/webiyara/index.php (14)
+2020/01/03 09:01:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "setbgstory".' in /Applications/MAMP/htdocs/webiyara/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CController.php(270): CController->missingAction('setbgstory')
+#1 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(282): CController->run('setbgstory')
+#2 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('backend/backgro...')
+#3 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/backend/background/setbgstory
+HTTP_REFERER=http://localhost/webiyara/backend/about
+---
+2020/01/03 09:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "setbgstory".' in /Applications/MAMP/htdocs/webiyara/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CController.php(270): CController->missingAction('setbgstory')
+#1 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(282): CController->run('setbgstory')
+#2 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('backend/backgro...')
+#3 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/backend/background/setbgstory
+HTTP_REFERER=http://localhost/webiyara/backend/about
+---
+2020/01/03 10:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "setbgstory".' in /Applications/MAMP/htdocs/webiyara/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CController.php(270): CController->missingAction('setbgstory')
+#1 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(282): CController->run('setbgstory')
+#2 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('backend/backgro...')
+#3 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webiyara/backend/background/setbgstory
+HTTP_REFERER=http://localhost/webiyara/backend/about
+---
+2020/01/03 10:50:25 [error] [php] Undefined index: leftbottom (/Applications/MAMP/htdocs/webiyara/protected/controllers/backend/AboutController.php:18)
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CController.php(286): AboutController->runAction()
+#1 /Applications/MAMP/htdocs/webiyara/framework/web/CController.php(265): AboutController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(282): AboutController->run()
+#3 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/webiyara/index.php(14): CWebApplication->run()
+REQUEST_URI=/webiyara/backend/about
+in /Applications/MAMP/htdocs/webiyara/protected/controllers/backend/AboutController.php (18)
+in /Applications/MAMP/htdocs/webiyara/index.php (14)
+2020/01/03 11:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/1577949671l1.png".' in /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/webiyara/framework/web/CWebApplication.php(141): CWebApplication->runController('images/15779496...')
+#1 /Applications/MAMP/htdocs/webiyara/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webiyara/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webiyara/images/1577949671l1.png
+HTTP_REFERER=http://localhost/webiyara/site/story
+---
